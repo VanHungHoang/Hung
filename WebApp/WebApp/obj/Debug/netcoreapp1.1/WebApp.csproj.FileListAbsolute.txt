@@ -1,0 +1,8 @@
+D:\Project\WebApp\WebApp\bin\Debug\netcoreapp1.1\WebApp.deps.json
+D:\Project\WebApp\WebApp\bin\Debug\netcoreapp1.1\WebApp.runtimeconfig.json
+D:\Project\WebApp\WebApp\bin\Debug\netcoreapp1.1\WebApp.runtimeconfig.dev.json
+D:\Project\WebApp\WebApp\bin\Debug\netcoreapp1.1\WebApp.dll
+D:\Project\WebApp\WebApp\bin\Debug\netcoreapp1.1\WebApp.pdb
+D:\Project\WebApp\WebApp\obj\Debug\netcoreapp1.1\WebApp.AssemblyInfo.cs
+D:\Project\WebApp\WebApp\obj\Debug\netcoreapp1.1\WebApp.dll
+D:\Project\WebApp\WebApp\obj\Debug\netcoreapp1.1\WebApp.pdb
