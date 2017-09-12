@@ -1,0 +1,19 @@
+<form>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search Author..."
+    [(ngModel)]="searchauthorName" name="searchauthorName" (keyup.enter)="searchAuthor()">
+  </div>
+</form>
+<label>Filter Author
+  <select name="" id="">
+    <option value="0">Select</option>
+    <option *ngFor="let author of authors" value="{{author.authorName}}">{{author.authorName}}</option>
+  </select>
+</label>
+<div *ngIf="authors">
+  <ul>
+    <li *ngFor="let author of authors">
+      {{author.authorName}}
+    </li>
+  </ul>
+</div>
