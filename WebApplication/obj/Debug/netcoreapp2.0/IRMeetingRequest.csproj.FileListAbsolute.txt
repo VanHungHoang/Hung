@@ -1,0 +1,11 @@
+D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\bin\Debug\netcoreapp2.0\IRMeetingRequest.deps.json
+D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\bin\Debug\netcoreapp2.0\IRMeetingRequest.runtimeconfig.json
+D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\bin\Debug\netcoreapp2.0\IRMeetingRequest.runtimeconfig.dev.json
+D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\bin\Debug\netcoreapp2.0\IRMeetingRequest.dll
+D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\bin\Debug\netcoreapp2.0\IRMeetingRequest.pdb
+D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\obj\Debug\netcoreapp2.0\IRMeetingRequest.csproj.CoreCompileInputs.cache
+D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\obj\Debug\netcoreapp2.0\IRMeetingRequest.AssemblyInfoInputs.cache
+D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\obj\Debug\netcoreapp2.0\IRMeetingRequest.AssemblyInfo.cs
+D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\obj\Debug\netcoreapp2.0\IRMeetingRequest.dll
+D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\obj\Debug\netcoreapp2.0\IRMeetingRequest.pdb
+D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\obj\Debug\netcoreapp2.0\IRMeetingRequest.csprojResolveAssemblyReference.cache

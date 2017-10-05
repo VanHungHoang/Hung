@@ -1,0 +1,438 @@
+@using Euroland.NetCore.IRMeetingRequest.Server;
+@using Euroland.NetCore.ToolsFramework.Mvc.Localization
+@using Newtonsoft.Json;
+@addTagHelper "*, Microsoft.AspNet.Mvc.TagHelpers"
+@addTagHelper "*, Euroland.NetCore.ToolsFramework.Mvc"
+
+@inject ITranslation localizer
+@inject AppSettings setting
+
+<section id="main-app" class="app-width">
+
+    <header class="heading">
+        @if (setting.EnableHeading)
+        {
+            <div class="heading-text">IR Meeting Request</div>
+        }
+    </header>
+
+    <div class="calendar">
+        <div class="calendar-title">Select available schedule below to request for a meeting.</div>
+        <div class="calendar-wrapper"></div>
+    </div>
+
+    <div class="booking-wrapper">
+        <div class="irmeetingrequest-header"><h1 class="irmeetingrequest-text inner-container">IR Meeting Request</h1></div>
+        <div class="time-schedule"><p class="time-schedule-text inner-container">Schedule Monday, April 6, 2017 9:00 am<a href="#" class="btn-change"> change</a></p></div>
+        <div class="booking-navigation-container inner-container">
+            <ul class="navigation">
+                <li class="arrow-typeOfMeeting active" step-index="0">
+                    <div class="inner-arrow inner-arrow-typeofmeeting  typeOfMeeting active-background">1. Type of Meeting</div>
+                </li>
+                <li class="arrow arrow-applicantInfomation" step-index="1">
+                    <div class="inner-arrow applicantInfomation">2. Applicant Infomation</div>
+                </li>
+                <li class="arrow arrow-agenda" step-index="2">
+                    <div class="inner-arrow agenda">3. Agenda</div>
+                </li>
+                <li class="arrow arrow-otherAttendees" step-index="3">
+                    <div class="inner-arrow otherAttendees">4. Other Attendees</div>
+                </li>
+
+                <li class="arrow-end">
+                    <div class="inner-arrow end"></div>
+                </li>
+            </ul>
+        </div>
+        <div style="clear:both"></div>
+        <div class="booking-form-container inner-container">
+            <div class="meeting-type-wrapper"></div>
+            <div class="applicant-wrapper"></div>
+            <div class="agenda-wrapper"></div>
+            <div class="attendees-wrapper"></div>
+        </div>
+        <div class="button-wrapper inner-container">
+            <a href="#" class="btn-back">Back</a>
+            <a href="#" class="btn-next">Next</a>
+        </div>
+    </div>
+
+    <div class="popup-calendar">
+        <div class="popup-wrapper">
+            <div class="popup-title">
+                Tran.Select schedule
+            </div>
+            <div class="popup-body">
+
+            </div>
+            <div class="close-popup">
+                X
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+@*<footer class="footer">
+    <div class="supply-by-box">
+        <div class="supply-by">
+            <SuppliedBy>@localizer["SuppliedBy"]</SuppliedBy>
+        </div>
+    </div>
+    <div class="cookies-box">
+        <CookiePolicy text="@localizer["CookiePolicy"].Value" />
+    </div>
+    <div class="disclaimer-box">
+        <TermsOfUse text-template="@localizer["TermOfUse"].Value">
+            <Disclaimer text="@localizer["Disclaimer"].Value" />
+        </TermsOfUse>
+    </div>
+</footer>*@
+
+<section class="template">
+    <script id="meeting-type-content" type="x-tmpl-mustache">
+        <div class="type-of-meeting">
+            <div class="content">
+                <hr />
+                <div class="content-TypeOfMeeting">
+                    <p class="title">Select the type of meeting you want below. </p>
+                    <div class="button-meetingType">
+                        <ul class="tabs">
+                            {{#meetingTypes}}
+                            <li class="meeting-type {{cssClassType}} {{cssClassActive}}" aria-controls="{{control}}" type-id="{{typeId}}">{{typeName}}</li>
+                            {{/meetingTypes}}
+                        </ul>
+                    </div>
+                    <div class="content-note">
+                        {{#meetingTypes}}
+                        <div id="{{control}}" class="text-note {{cssClassTextNoteActive}}">
+                            <p>{{textNote}}</p>
+                        </div>
+                        {{/meetingTypes}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script id="applicant-area" type="x-tmpl-mustache">
+        {{#applicantFields}}
+        {{#applicantArea}}
+        <div class="applicant-form">
+            {{#input}}
+            <div class="form-group">
+                <div class="row">
+                    <label class="control-label">{{field}}</label>
+                    <div class="form-control">
+                        <input type="text" class="txt-{{field}}" name={{field}}>
+                        <span {{^required}} class=compulsory-field {{/required}}>*</span>
+                    </div>
+                </div>
+            </div>
+            {{/input}}
+            {{^input}}
+            <div class="form-control">
+                <select name={{field}} class={{field}}>
+                    {{#data}}
+                    <option value="32">{{da}}</option>{{/data}}
+                    <option value="105">Vietnamese</option>
+                </select>
+                <span {{^required}} class=compulsory-field {{/required}}>*</span>
+            </div>
+            {{/input}}
+        </div>
+        {{/applicantArea}}
+
+        {{/applicantFields}}
+    </script>
+
+    <script id="company-area" type="x-tmpl-mustache">
+        {{#applicantFields}}
+        {{^applicantArea}}
+        <div class="company-form">
+            {{#input}}
+            <div class="form-group">
+                <div class="row">
+                    <label class="control-label">{{field}}</label>
+                    <div class="form-control">
+                        <input type="text" class="txt-{{field}}" name={{field}}>
+                        <span {{^required}} class=compulsory-field {{/required}}>*</span>
+                    </div>
+                </div>
+            </div>
+            {{/input}}
+            {{^input}}
+            <div class="form-control">
+                <select name={{field}} class={{field}}>
+                    {{#data}}
+                    <option value="32">{{da}}</option>{{/data}}
+                    <option value="105">Vietnamese</option>
+                </select>
+                <span {{^required}} class=compulsory-field {{/required}}>*</span>
+            </div>
+            {{/input}}
+        </div>
+        {{/applicantArea}}
+            
+        {{/applicantFields}}
+    </script>
+
+    <script id="applicant" type="x-tmpl-mustache">
+        <div class="applicant-form">
+            {{ name }}
+        </div>
+    </script>
+
+    <script id="agendar-content" type="x-tmpl-mustache">
+        <div class="agendar">
+            <div class="content">
+
+                <hr />
+
+                <div class="content-agenda">
+
+                    <div class="input-summary">
+                        <textarea type="text" name="name" placeholder="Brief summary of Meeting Agenda" value="" class="summary-meeting input"></textarea>
+                        <span class="compulsory-field">&nbsp;*</span>
+                    </div>
+
+                    <div class="upload-file">
+
+                        <h3 class="title-upload">Upload Files</h3>
+
+                        <div class="dragandrophandler">
+
+                            <input type="file" name="files[]" id="file" class="box__file custom-file" data-multiple-caption="{count} files selected" multiple />
+
+                            <label for="file">
+
+                                <svg class="file-upload-icon file-upload">
+                                    <span class="accessibility">
+
+                                    </span>
+                                </svg>
+
+                                <span class="title-drag">Drag files here</span>
+                                <span class="title-browse">or <a href="#">browse your computer</a> </span>
+                                <span class="title-condition">You can upload up to 50mb with file extensions png, xls, doc, docs and pdf. </span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </script>
+
+    <script id="other-attendees-wrapper" type="x-tmpl-mustache">
+        <div class="other-attendees">
+            <div class="content">
+
+                <hr />
+
+                <div class="content-otherAttendees">
+                    <div class="form">
+
+                        <div class="title-form">
+                            <div class="title-name">
+                                <p>Name</p>
+                            </div>
+                            <div class="title-name">
+                                <p>Position</p>
+                            </div>
+                            <div class="title-name">
+                                <p>Email Address</p>
+                            </div>
+                        </div>
+
+                        <div class="form-item">
+                            <div class="form-group">
+                                <div class="row">
+                                    <input type="text" class="txt-value txt-name" name="txt-name" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="dropdown">
+                                        <select name="one" class="dropdown-select">
+                                            <option value="0">Research Analyst</option>
+                                            <option value="1">Research Analyst</option>
+                                            <option value="2">Research Analyst</option>
+                                            <option value="3">Research Analyst</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <input type="text" class="txt-value txt-email" name="txt-email" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-item">
+                            <div class="form-group">
+                                <div class="row">
+                                    <input type="text" class="txt-value txt-name" name="txt-name" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="dropdown">
+                                        <select name="one" class="dropdown-select">
+                                            <option value="0">Research Analyst</option>
+                                            <option value="1">Research Analyst</option>
+                                            <option value="2">Research Analyst</option>
+                                            <option value="3">Research Analyst</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <input type="text" class="txt-value txt-email" name="txt-email" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <span class="add-number">+</span>
+
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script id="fullCalendarHeader" type="text/x-jquery-tmpl">
+        <div class="direction-wrapper">
+            <div class="btn-direction btn-prev">
+                <div class="img-prev"></div>
+            </div>
+            <div class="direction-info">
+                <div class="selected-date">{{selectedDate}}</div>
+                <div class="timezone">
+                    <!-- select or dropdown-->
+                    <div class="timezone-dropdown">
+                        {{#selectedTimeZone}}
+                        <button class="btn-timezone" type="button" data-toggle="dropdown" time-zone="{{timeZoneID}}">
+                            {{timeZoneName}}
+                        </button>
+                        <span class="timezone-arrow-down"></span>
+                        {{/selectedTimeZone}}
+                        <ul class="timezone-dropdown-menu">
+                            {{#timeZones}}
+                            <li>
+                                <a class="timezone-item" href="javascript:void(0)" time-zone="{{timeZoneID}}">{{timeZoneName}}</a>
+                            </li>
+                            {{/timeZones}}
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="btn-direction btn-next">
+                <div class="img-next"></div>
+            </div>
+        </div>
+    </script>
+    <script id="fullCalendarBody" type="text/x-jquery-tmpl">
+        <div class="calendar-view-wrapper">
+            <div class="view-header">
+
+            </div>
+            <div class="view-body">
+
+            </div>
+
+            <div class="view-footer">
+
+            </div>
+        </div>
+    </script>
+
+    <script id="fullCalendarCell" type="x-tmpl-mustache">
+        <div class="view-row-cell{{#isToday}} cal-today{{/isToday}}{{#isWeekend}} cal-weekend{{/isWeekend}}{{#inMonth}} cal-inmonth{{/inMonth}}{{^inMonth}} cal-outmonth{{/inMonth}}" date="{{dateString}}">
+            <div class="view-cell-top">
+                <div class="view-cell-number ">{{dateNumber}}</div>
+                <div class="fc-events">
+
+                </div>
+            </div>
+            <div class="view-cell-bottom">
+                <div class="schedule-events"></div>
+            </div>
+        </div>
+    </script>
+
+    <script id="smallCalendarBody" type="x-tmpl-mustache">
+        <div class="calendar-view-small">
+            <div class="view-small-wrapper">
+                <div class="view-header">
+                    <div class="col-date header-date">
+                        Tran.Date
+                    </div>
+                    <div class="col-schedule header-schedule">
+                        Tran.Schedules
+                    </div>
+                </div>
+                <div class="view-body">
+
+                </div>
+            </div>
+            <div class="view-footer">
+
+            </div>
+        </div>
+    </script>
+
+    <script id="smallCalendarBodyRow" type="x-tmpl-mustache">
+        <div class="view-body-row {{#isToday}} cal-today{{/isToday}}{{#isWeekend}} cal-weekend{{/isWeekend}}" date="{{dateString}}">
+            <div class="col-date">
+                <div class="col-date-number">
+                    {{dateNumber}}
+                </div>
+                <div class="col-date-string">
+                    {{dateShortString}}
+                </div>
+            </div>
+            <div class="col-schedule">
+                <div class="col-schedule-inner"></div>
+            </div>
+        </div>
+    </script>
+
+</section>
+
+@*<translation name="OK" />
+    <br/>
+    <span trans-for="OK"></span>
+    <br/>
+    <span trans-inline="true">This is label {{ OK | translation }}</span>*@
+
+<environment names="Development">
+</environment>
+<script src="~/dist/frontendvendor.js" asp-append-version="true"></script>
+<script src="~/dist/@ViewBag.MainDotJs" asp-append-version="true"></script>
+
+<script type="text/javascript">
+    var timezones = @Html.Raw(ViewBag.TimeZones),
+        countries = @Html.Raw(ViewBag.Countries),
+        professions = @Html.Raw(ViewBag.Professions),
+        institutions = @Html.Raw(ViewBag.Institutions),
+        AppSetting = {
+            fullDateFormat: 'MMMM yyyy',
+            timeZone: @Html.Raw(JsonConvert.SerializeObject(setting.Timezone)),
+            allowMultipleSchedule: @JsonConvert.SerializeObject(setting.AllowMultipleSchedules),
+            enabledPrivacyPolicy: @JsonConvert.SerializeObject(setting.EnabledPrivacyPolicy),
+            subscribeFields: @Html.Raw(JsonConvert.SerializeObject(setting.SubscriberFields)),
+            enabledTypeOfMeeting: @Html.Raw(JsonConvert.SerializeObject(setting.EnabledTypeOfMeeting)),
+            requiredFields: @Html.Raw(JsonConvert.SerializeObject(setting.RequiredFields)),
+            availableLanguagesOnMeeting: @Html.Raw(JsonConvert.SerializeObject(setting.AvailableLanguagesOnMeeting))
+       };
+
+    var AllLabels = @Html.Raw(localizer.GetAllStringsJson());
+</script>

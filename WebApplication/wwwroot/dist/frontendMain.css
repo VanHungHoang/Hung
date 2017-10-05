@@ -1,0 +1,772 @@
+ul {
+  -webkit-padding-start: 0; }
+
+body {
+  background-color: black; }
+
+.booking-wrapper {
+  height: 100vh;
+  width: 1035px;
+  margin: 0 auto;
+  background-color: #FFFFFF; }
+
+.inner-container {
+  padding-left: 32px;
+  padding-right: 32px; }
+
+.container {
+  width: 975px;
+  margin: 0 auto; }
+
+.arrow {
+  float: left;
+  margin-right: -50px;
+  font-size: 0; }
+
+.arrow-typeOfMeeting {
+  float: left;
+  margin-right: -50px;
+  font-size: 0; }
+
+.arrow-end {
+  float: left;
+  margin-right: -50px;
+  font-size: 0; }
+  .arrow-end .end {
+    width: 120px; }
+
+.inner-arrow {
+  padding-right: 29px;
+  height: 58px;
+  display: inline-block;
+  background-color: #EEF1F7;
+  text-align: left;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 58px;
+  vertical-align: middle;
+  color: black; }
+
+.inner-arrow-typeofmeeting {
+  color: black;
+  padding-left: 29px; }
+
+.arrow:before, .arrow:after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 29px solid transparent;
+  vertical-align: middle; }
+
+.typeOfMeeting:after {
+  border-left-color: red; }
+
+.arrow-typeOfMeeting:after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 29px solid transparent;
+  vertical-align: middle;
+  border-left-color: #EEF1F7; }
+
+.arrow-end:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 29px solid transparent;
+  vertical-align: middle; }
+
+.activeTypeOfMeeting:after {
+  border-left-color: #4c7baa; }
+
+li.active .inner-arrow {
+  background-color: #4c7baa;
+  color: white; }
+
+li.active:after {
+  border-left-color: #4c7baa; }
+
+li.active:before {
+  border-top-color: #4c7baa;
+  border-bottom-color: #4c7baa;
+  border-right-color: #4c7baa; }
+
+.arrow-end:before {
+  border-top-color: #EEF1F7;
+  border-bottom-color: #EEF1F7;
+  border-right-color: #EEF1F7; }
+
+.arrow:before {
+  border-top-color: #EEF1F7;
+  border-bottom-color: #EEF1F7;
+  border-right-color: #EEF1F7; }
+
+.arrow:after {
+  border-left-color: #EEF1F7; }
+
+.footer {
+  margin-top: 20px;
+  clear: both; }
+
+.irmeetingrequest-header {
+  background-color: #EEF1F7;
+  height: 58px; }
+
+.irmeetingrequest-text {
+  padding-top: 9px; }
+
+.time-schedule {
+  height: 63px;
+  background-color: #F7F7F7;
+  margin-top: -16px; }
+
+.time-schedule-text {
+  padding-top: 21px; }
+
+.btn-next {
+  border-radius: 2px;
+  text-decoration: none;
+  border: 1px solid #4D73A8;
+  background-color: #4D73A8;
+  color: white;
+  width: 120px;
+  height: 28px;
+  text-align: center;
+  display: inline-block;
+  line-height: 28.5px; }
+
+.btn-back {
+  margin-right: 24px;
+  text-decoration: none;
+  color: #000000; }
+
+.button-wrapper {
+  float: right;
+  margin-top: 110px; }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 704px; }
+  .inner-arrow {
+    width: 88px;
+    font-size: 9px; } }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 643px; }
+  .inner-arrow {
+    width: 100px;
+    font-size: 11px;
+    white-space: nowrap;
+    line-height: 55px; }
+  .inner-arrow.applicantInfomation {
+    padding-right: 21px !important; }
+  .arrow-end {
+    display: none; } }
+
+@media screen and (max-width: 568px) {
+  .inner-arrow.inner-arrow-typeofmeeting.typeOfMeeting {
+    padding-right: 15px !important; } }
+
+.type-of-meeting {
+  width: 975px;
+  height: auto;
+  margin: auto;
+  background: white;
+  font-family: Arial, Helvetica, sans-serif; }
+  .type-of-meeting .content {
+    margin-top: 14px; }
+    .type-of-meeting .content .content-TypeOfMeeting {
+      margin-top: 50px; }
+      .type-of-meeting .content .content-TypeOfMeeting .button-meetingType {
+        margin-top: 24px; }
+        .type-of-meeting .content .content-TypeOfMeeting .button-meetingType .title {
+          font-size: 14px; }
+        .type-of-meeting .content .content-TypeOfMeeting .button-meetingType .tabs {
+          display: inline-block;
+          margin: 0;
+          padding: 0; }
+          .type-of-meeting .content .content-TypeOfMeeting .button-meetingType .tabs .meeting-type {
+            cursor: default;
+            display: inline-block;
+            font-size: 14px; }
+          .type-of-meeting .content .content-TypeOfMeeting .button-meetingType .tabs .face-to-face {
+            background: white;
+            color: black;
+            margin-right: 15px;
+            border: 1px solid transparent;
+            border-color: #9B9B9B;
+            padding: 10px 36px; }
+          .type-of-meeting .content .content-TypeOfMeeting .button-meetingType .tabs .video-conference {
+            background: white;
+            color: black;
+            margin-right: 15px;
+            border: 1px solid transparent;
+            border-color: #9B9B9B;
+            padding: 10px 22.4px; }
+          .type-of-meeting .content .content-TypeOfMeeting .button-meetingType .tabs .teleconference {
+            background: white;
+            color: black;
+            margin-right: 15px;
+            border: 1px solid transparent;
+            border-color: #9B9B9B;
+            padding: 10px 30.4px; }
+          .type-of-meeting .content .content-TypeOfMeeting .button-meetingType .tabs .meetingType-active {
+            background: #007fff;
+            color: white;
+            margin-right: 15px;
+            border: 1px solid transparent;
+            border-color: #9B9B9B; }
+    .type-of-meeting .content .content-note {
+      margin-top: 37px;
+      padding: 10px;
+      font-size: 14px;
+      width: 84%;
+      background: #e5e5e5; }
+      .type-of-meeting .content .content-note .text-note {
+        display: none; }
+      .type-of-meeting .content .content-note .cssClassTextNoteActive {
+        display: block; }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .content-note {
+    width: 705px !important;
+    line-height: 18px; } }
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .type-of-meeting {
+    width: 100%; }
+    .type-of-meeting .content-TypeOfMeeting {
+      margin-top: auto; }
+      .type-of-meeting .content-TypeOfMeeting .title {
+        font-size: 13px; }
+      .type-of-meeting .content-TypeOfMeeting .face-to-face {
+        padding: 10px 22px !important;
+        margin-right: 2px !important;
+        font-size: 12px !important; }
+      .type-of-meeting .content-TypeOfMeeting .video-conference {
+        padding: 10px 8.4px !important;
+        margin-right: 2px !important;
+        font-size: 12px !important; }
+      .type-of-meeting .content-TypeOfMeeting .teleconference {
+        padding: 10px 16.4px !important;
+        margin-right: 2px !important;
+        font-size: 13px !important; }
+    .type-of-meeting .content-note {
+      width: 400px !important;
+      font-size: 12px !important;
+      line-height: 18px; } }
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  .type-of-meeting {
+    width: 100%; }
+    .type-of-meeting .content-TypeOfMeeting {
+      margin-top: auto; }
+      .type-of-meeting .content-TypeOfMeeting .title {
+        font-size: 12px; }
+      .type-of-meeting .content-TypeOfMeeting .face-to-face {
+        padding: 10px 12px !important;
+        margin-right: 2px !important;
+        font-size: 11px !important; }
+      .type-of-meeting .content-TypeOfMeeting .video-conference {
+        padding: 10px 2.4px !important;
+        margin-right: 2px !important;
+        font-size: 11px !important; }
+      .type-of-meeting .content-TypeOfMeeting .teleconference {
+        padding: 10px 6.4px !important;
+        margin-right: 2px !important;
+        font-size: 11px !important; }
+    .type-of-meeting .content-note {
+      width: 300px !important;
+      font-size: 12px !important;
+      line-height: 18px; } }
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .type-of-meeting {
+    width: 100%; }
+    .type-of-meeting .content-TypeOfMeeting {
+      margin-top: auto; }
+      .type-of-meeting .content-TypeOfMeeting .title {
+        font-size: 12px; }
+      .type-of-meeting .content-TypeOfMeeting .face-to-face {
+        padding: 10px 16px !important;
+        margin-right: 2px !important;
+        font-size: 10px !important; }
+      .type-of-meeting .content-TypeOfMeeting .video-conference {
+        padding: 10px 2.4px !important;
+        margin-right: 2px !important;
+        font-size: 10px !important; }
+      .type-of-meeting .content-TypeOfMeeting .teleconference {
+        padding: 10px 10.4px !important;
+        margin-right: 2px !important;
+        font-size: 10px !important; }
+      .type-of-meeting .content-TypeOfMeeting .content-note {
+        font-size: 11px;
+        width: 280px !important;
+        line-height: 18px; } }
+
+/*@font-face {
+    font-family: Helveticaneue;
+    src: url('font/HelveticaNeueLight.ttf');
+}*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helveticaneue;
+  background-color: white; }
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+/******calendar-header****/
+.calendar-header {
+  height: 68px; }
+  .calendar-header .direction-wrapper {
+    position: relative;
+    padding: 0 40px;
+    height: 40px; }
+    .calendar-header .direction-wrapper .btn-direction {
+      background-color: #fbfbfb;
+      border-radius: 50%;
+      padding: 6px;
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      top: 0;
+      border: 1px solid #dcdcdc; }
+    .calendar-header .direction-wrapper .btn-direction.btn-prev {
+      left: 0; }
+      .calendar-header .direction-wrapper .btn-direction.btn-prev .img-prev {
+        height: 100%;
+        width: 100%;
+        background-image: url(/dist/assets/Client/frontend/assets/prev-512.a64133a3450d58ad6067.png);
+        background-size: cover; }
+    .calendar-header .direction-wrapper .btn-direction.btn-next {
+      right: 0; }
+      .calendar-header .direction-wrapper .btn-direction.btn-next .img-next {
+        height: 100%;
+        width: 100%;
+        background-image: url(/dist/assets/Client/frontend/assets/next-512.d02ea12d65ac06c8e75e.png);
+        background-size: cover; }
+    .calendar-header .direction-wrapper .btn-direction.disable {
+      border-color: transparent; }
+    .calendar-header .direction-wrapper .direction-info {
+      text-align: center; }
+      .calendar-header .direction-wrapper .direction-info .selected-date {
+        font-weight: 400;
+        font-size: 20px;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis; }
+      .calendar-header .direction-wrapper .direction-info .timezone {
+        /*display: none;*/ }
+        .calendar-header .direction-wrapper .direction-info .timezone .timezone-dropdown {
+          margin: 0 auto;
+          width: 300px;
+          max-width: 100%;
+          position: relative;
+          font-size: 14px; }
+          .calendar-header .direction-wrapper .direction-info .timezone .timezone-dropdown button.btn-timezone {
+            width: 100%;
+            border: none;
+            outline: none;
+            color: #9b9b9b;
+            background-color: transparent;
+            padding: 6px 12px;
+            white-space: nowrap;
+            overflow: hidden !important;
+            text-overflow: ellipsis; }
+          .calendar-header .direction-wrapper .direction-info .timezone .timezone-dropdown .timezone-arrow-down {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: 2px;
+            vertical-align: middle;
+            border-top: 4px dashed;
+            border-top: 4px solid\9;
+            border-right: 4px solid transparent;
+            border-left: 4px solid transparent;
+            position: absolute;
+            right: 5px;
+            top: 40%; }
+          .calendar-header .direction-wrapper .direction-info .timezone .timezone-dropdown .btn-timezone:hover {
+            background-color: rgba(0, 0, 0, 0.01); }
+          .calendar-header .direction-wrapper .direction-info .timezone .timezone-dropdown .timezone-dropdown-menu {
+            display: none;
+            max-height: 40vh;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            min-width: 160px;
+            margin: 2px 0;
+            padding: 5px 0;
+            list-style: none;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            overflow-y: scroll;
+            overflow-x: hidden; }
+            .calendar-header .direction-wrapper .direction-info .timezone .timezone-dropdown .timezone-dropdown-menu li > a {
+              display: block;
+              padding: 3px 20px;
+              clear: both;
+              font-weight: 400;
+              color: #333;
+              white-space: nowrap;
+              text-decoration: none;
+              text-align: left;
+              white-space: nowrap;
+              overflow: hidden !important;
+              text-overflow: ellipsis; }
+            .calendar-header .direction-wrapper .direction-info .timezone .timezone-dropdown .timezone-dropdown-menu li > a:hover {
+              background-color: whitesmoke; }
+        .calendar-header .direction-wrapper .direction-info .timezone .timezone-dropdown.show-dropdown .timezone-dropdown-menu {
+          display: block; }
+
+/******small view ******/
+.calendar-body {
+  margin-top: 152px; }
+  .calendar-body .calendar-view-small .view-small-wrapper {
+    border: 4px solid #f5f5f5;
+    padding: 4px; }
+    .calendar-body .calendar-view-small .view-small-wrapper .col-date {
+      min-width: 10%;
+      padding: 0 20px 0 10px;
+      display: inline-block;
+      text-align: center; }
+    .calendar-body .calendar-view-small .view-small-wrapper .col-schedule {
+      max-width: 75%;
+      display: inline-block; }
+    .calendar-body .calendar-view-small .view-small-wrapper .view-header {
+      height: 35px;
+      line-height: 35px; }
+    .calendar-body .calendar-view-small .view-small-wrapper .view-body .view-body-row:not(:last-child) {
+      border-bottom: solid 1px #f9f9f9;
+      padding: 5px 0; }
+    .calendar-body .calendar-view-small .view-small-wrapper .view-body .view-body-row .col-date {
+      color: #979797; }
+      .calendar-body .calendar-view-small .view-small-wrapper .view-body .view-body-row .col-date .col-date-number {
+        font-weight: bold; }
+    .calendar-body .calendar-view-small .view-small-wrapper .view-body .view-body-row .col-schedule .col-schedule-inner .schedule-item {
+      float: left;
+      padding: 3px;
+      border-radius: 4px;
+      color: #fff; }
+    .calendar-body .calendar-view-small .view-small-wrapper .view-body .view-body-row .col-schedule .col-schedule-inner .schedule-item.schedule-available {
+      background-color: #f5a623; }
+    .calendar-body .calendar-view-small .view-small-wrapper .view-body .view-body-row .col-schedule .col-schedule-inner .schedule-item.schedule-reserved {
+      background-color: #cfcfcf; }
+    .calendar-body .calendar-view-small .view-small-wrapper .view-body .view-body-row .col-schedule .col-schedule-inner .schedule-item:not(:last-child) {
+      margin-right: 5px; }
+  .calendar-body .calendar-view-small .view-footer {
+    padding: 10px;
+    font-size: 8px; }
+    .calendar-body .calendar-view-small .view-footer ul li.fc-type-item {
+      position: relative;
+      padding-left: 15px;
+      display: inline-block;
+      margin-right: 10px; }
+      .calendar-body .calendar-view-small .view-footer ul li.fc-type-item .fc-type-item-color {
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: 0; }
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 10px; }
+    body .calendar-header .direction-wrapper .btn-direction {
+      background-color: #fbfbfb;
+      border-radius: 50%;
+      padding: 2px;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 0; }
+    body .calendar-header .direction-wrapper .direction-info .timezone .timezone-dropdown .timezone-dropdown-menu li > a {
+      padding: 3px 5px; } }
+
+/*STYLE FULL CALENDAR BODY*/
+.calendar-body.view {
+  margin-left: 1.1%; }
+  .calendar-body.view .view-row {
+    width: 100%;
+    height: 150px; }
+  .calendar-body.view .view-row.view-header-row {
+    height: 40px;
+    line-height: 40px;
+    text-align: center; }
+    .calendar-body.view .view-row.view-header-row .view-row-cell {
+      float: left;
+      width: 14%;
+      height: 100%;
+      border-right: 1px solid #f1f3f5;
+      border-bottom: 1px solid #f1f3f5;
+      border-top: 1px solid #f1f3f5; }
+    .calendar-body.view .view-row.view-header-row .view-row-cell.cal-weekend {
+      background-color: #e9f1f1; }
+    .calendar-body.view .view-row.view-header-row .view-row-cell:first-child {
+      border-left: 1px solid #f1f3f5; }
+    .calendar-body.view .view-row.view-header-row .view-row-cell:last-child {
+      border-left: 1px solid #f1f3f5; }
+  .calendar-body.view .view-body .view-row .view-row-cell {
+    float: left;
+    width: 14%;
+    height: 100%;
+    border-right: 1px solid #f1f3f5;
+    border-bottom: 1px solid #f1f3f5; }
+    .calendar-body.view .view-body .view-row .view-row-cell .view-cell-top {
+      height: 30px;
+      padding: 3px 1px;
+      position: relative; }
+      .calendar-body.view .view-body .view-row .view-row-cell .view-cell-top .view-cell-number {
+        float: right;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        border-radius: 50%; }
+      .calendar-body.view .view-body .view-row .view-row-cell .view-cell-top .fc-events {
+        float: right;
+        margin-top: 6px;
+        margin-right: 3px; }
+        .calendar-body.view .view-body .view-row .view-row-cell .view-cell-top .fc-events .list-type-fc-event-item {
+          width: 10px;
+          height: 10px;
+          float: left;
+          border-radius: 50%; }
+        .calendar-body.view .view-body .view-row .view-row-cell .view-cell-top .fc-events .arrowPopup {
+          width: 0px;
+          height: 0px;
+          border-left: 25px solid transparent;
+          border-right: 25px solid transparent;
+          border-bottom: 25px solid #2f2f2f;
+          margin-top: 10px;
+          margin-right: -18px; }
+        .calendar-body.view .view-body .view-row .view-row-cell .view-cell-top .fc-events .list-fc-events {
+          /* display: none; */
+          position: absolute;
+          top: 30px;
+          /* left: 7%; */
+          background-color: red;
+          padding: 20px;
+          z-index: 99;
+          width: 300px;
+          box-shadow: 0px 0px 10px #bababa;
+          margin-left: -142px; }
+          .calendar-body.view .view-body .view-row .view-row-cell .view-cell-top .fc-events .list-fc-events ul li.list-fc-events-item .fc-event-top .fc-event-type {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 5px 5px 0 0;
+            float: left; }
+          .calendar-body.view .view-body .view-row .view-row-cell .view-cell-top .fc-events .list-fc-events ul li.list-fc-events-item .fc-event-bottom {
+            padding-left: 30px; }
+          .calendar-body.view .view-body .view-row .view-row-cell .view-cell-top .fc-events .list-fc-events ul li.list-fc-events-item:not(:last-child) .fc-event-bottom .fc-event-title {
+            border-bottom: solid 1px #e2e2e2; }
+          .calendar-body.view .view-body .view-row .view-row-cell .view-cell-top .fc-events .list-fc-events .view-more {
+            float: right;
+            padding: 10px 15px 0 0;
+            color: #078da9; }
+    .calendar-body.view .view-body .view-row .view-row-cell .view-cell-bottom.has-schedule-more .schedule-events {
+      padding: 5px 10px; }
+      .calendar-body.view .view-body .view-row .view-row-cell .view-cell-bottom.has-schedule-more .schedule-events .schedule-events-item {
+        color: #9d9d9d;
+        cursor: default; }
+      .calendar-body.view .view-body .view-row .view-row-cell .view-cell-bottom.has-schedule-more .schedule-events .schedule-events-item.schedule-available {
+        color: #f7b549;
+        cursor: pointer; }
+    .calendar-body.view .view-body .view-row .view-row-cell .view-cell-bottom.has-schedule-more .schedule-more {
+      width: 13.9%;
+      background-color: #fff;
+      position: absolute;
+      left: 42.82%;
+      margin-top: 3px; }
+      .calendar-body.view .view-body .view-row .view-row-cell .view-cell-bottom.has-schedule-more .schedule-more .schedule-arrow-down {
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 10px solid #f00;
+        margin-left: 50%; }
+  .calendar-body.view .view-body .view-row .view-row-cell.cal-weekend {
+    background-color: #e9f1f1; }
+  .calendar-body.view .view-body .view-row .view-row-cell.cal-outmonth {
+    background-color: #eff2f5; }
+  .calendar-body.view .view-body .view-row .view-row-cell:first-child {
+    border-left: 1px solid #f1f3f5; }
+  .calendar-body.view .view-body .view-row .view-row-cell:last-child {
+    border-left: 1px solid #f1f3f5; }
+  .calendar-body.view .view-body .view-row .view-row-cell.cal-today .view-cell-top .view-cell-number {
+    background-color: #454b62;
+    color: #fff; }
+
+.other-attendees {
+  width: 975px;
+  height: auto;
+  margin: auto;
+  background: white;
+  font-family: Arial, Helvetica, sans-serif; }
+  .other-attendees .content {
+    margin-top: 14px;
+    position: relative; }
+    .other-attendees .content .content-otherAttendees {
+      margin-top: 50px; }
+      .other-attendees .content .content-otherAttendees .form .title-form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .other-attendees .content .content-otherAttendees .form .title-form .title-name {
+          width: 33.33%;
+          margin-bottom: 4px; }
+          .other-attendees .content .content-otherAttendees .form .title-form .title-name p {
+            width: 90%;
+            text-align: center; }
+      .other-attendees .content .content-otherAttendees .form .form-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 15px; }
+        .other-attendees .content .content-otherAttendees .form .form-item .form-group {
+          width: 33.33%; }
+          .other-attendees .content .content-otherAttendees .form .form-item .form-group .row .txt-value {
+            width: 80%;
+            height: 2.6em;
+            padding: 0px 10px;
+            font-size: 14px;
+            border: 1px solid #666;
+            border-radius: 3px; }
+          .other-attendees .content .content-otherAttendees .form .form-item .form-group .row .dropdown {
+            width: 86.77%;
+            height: 2.742em;
+            font-size: 14px;
+            border: 1px solid #666;
+            border-radius: 3px;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            background: #f2f2f2;
+            border-color: white #f7f7f7 #f5f5f5; }
+          .other-attendees .content .content-otherAttendees .form .form-item .form-group .row .dropdown:before, .other-attendees .content .content-otherAttendees .form .form-item .form-group .row .dropdown:after {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            top: 13px;
+            right: 10px;
+            width: 0;
+            height: 0;
+            border: 4px dashed;
+            border-color: #888 transparent;
+            pointer-events: none; }
+          .other-attendees .content .content-otherAttendees .form .form-item .form-group .row .dropdown:before {
+            border-bottom-style: solid;
+            border-top: none; }
+          .other-attendees .content .content-otherAttendees .form .form-item .form-group .row .dropdown:after {
+            margin-top: 7px;
+            border-top-style: solid;
+            border-bottom: none; }
+          .other-attendees .content .content-otherAttendees .form .form-item .form-group .row .dropdown-select {
+            border-radius: 3px;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 6px 8px 6px 10px;
+            line-height: 14px;
+            font-size: 12px;
+            text-shadow: 0 1px white;
+            -webkit-appearance: none; }
+      .other-attendees .content .content-otherAttendees .add-number {
+        margin-top: 10px; }
+
+.agendar {
+  width: 975px;
+  height: auto;
+  margin: auto;
+  background: white;
+  font-family: Arial, Helvetica, sans-serif; }
+  .agendar .content {
+    margin-top: 14px;
+    position: relative; }
+    .agendar .content .content-agenda {
+      margin-top: 50px; }
+      .agendar .content .content-agenda .input-summary {
+        display: inline-block;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .agendar .content .content-agenda .input-summary .summary-meeting {
+          width: 95%;
+          height: 100px; }
+        .agendar .content .content-agenda .input-summary .input {
+          outline: 0;
+          padding: 15px 15px;
+          font-size: 14px;
+          position: relative;
+          border-radius: 5px;
+          font-family: Arial, Helvetica, sans-serif;
+          opacity: 0.6;
+          height: 85px; }
+        .agendar .content .content-agenda .input-summary .compulsory-field {
+          color: red; }
+      .agendar .content .content-agenda .upload-file .title-upload {
+        margin: 40px 0px; }
+      .agendar .content .content-agenda .upload-file .dragandrophandler {
+        border: 1px dotted #808080;
+        border-radius: 6px;
+        width: 480px;
+        color: #92AAB0;
+        text-align: left;
+        vertical-align: middle;
+        padding: 10px 10px 10px 10px;
+        margin-bottom: 10px;
+        font-size: 200%; }
+        .agendar .content .content-agenda .upload-file .dragandrophandler .custom-file {
+          width: 0.1px;
+          height: 0.1px;
+          opacity: 0;
+          overflow: hidden;
+          position: absolute;
+          z-index: -1; }
+        .agendar .content .content-agenda .upload-file .dragandrophandler .file-upload {
+          background: url(/dist/assets/Client/frontend/images/icons/file_icon@1x.7228bd1a2409ced345fd.png) no-repeat center;
+          background-size: contain; }
+        .agendar .content .content-agenda .upload-file .dragandrophandler .file-upload-icon {
+          width: 100%;
+          height: 60px;
+          display: block;
+          margin: 15px 0px;
+          border: none;
+          border-radius: 3px; }
+        .agendar .content .content-agenda .upload-file .dragandrophandler .title-drag {
+          display: block;
+          text-align: center;
+          font-size: 20px;
+          color: black;
+          opacity: 0.4; }
+        .agendar .content .content-agenda .upload-file .dragandrophandler .title-browse {
+          display: block;
+          text-align: center;
+          font-size: 14px;
+          color: black;
+          opacity: 0.4; }
+          .agendar .content .content-agenda .upload-file .dragandrophandler .title-browse a {
+            color: #0094ff; }
+        .agendar .content .content-agenda .upload-file .dragandrophandler .title-condition {
+          display: block;
+          font-size: 14px;
+          text-align: center;
+          color: black;
+          opacity: 0.3; }
+
+.compulsory-field {
+  display: none; }
+
+/*# sourceMappingURL=frontendMain.css.map*/

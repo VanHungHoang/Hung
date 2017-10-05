@@ -1,0 +1,60 @@
+﻿{
+    "ToolUrlBase": "http://gamma.euroland.com/tools/IRMeetingRequest/",
+    "AvailableLanguages": "en-GB;fi-FI",
+    "DefaultCulture": "en-GB",
+    "AvailableLanguagesOnMeeting": "en-GB",
+    "Timezone": "Central Europe Standard Time",
+    "Format": {
+        "en-GB": {
+            "DateFormat": "dd/MM/yyyy",
+            "TimeFormat": "HH:mm"
+        }
+    },
+    "UseLatinNumbers": true,
+    "CompanySetting": {
+        "EmailSender": "mailservice@euroland.com",
+        "en-GB": {
+            "EmailSenderName": "IR Meeting Request",
+            "CompanyHomePage": "",
+            "CompanyName": ""
+        }
+    },
+    "EnabledCompanyLogo": true,
+    "CompanyLogo": "",
+    "NewRequestNotification": true,
+    "NewRequestNotificationReceipient": true,
+    "SendMeetingReminder": true,
+    "AllowMultipleSchedules": true,
+    "EnabledPrivacyPolicy": false,
+    "EnabledTypeOfMeeting": "1,2,3",
+    "FaceToFaceNote": {
+        "en-GB": ""
+    },
+    "UseOwnTeleconference": false,
+    "SubscriberFields": "Email,FirstName,SurName,Profession,Company,Address,PostalCode,City,Country,CountryCode,MobilePhone,Fax",
+    "RequiredFields": "Email",
+    "GoogleAnalyticsEnabled": true,
+    "ShowDisclaimerInfo": true,
+    "ShowCookiePolicyInfo": true,
+    "ShowSupplyInfo": true,
+    "ShowSupplierInfoLink": true,
+    "EnableHeading": true,
+    "MainHeadingFont": "",
+    "MainHeadingFontSize": "",
+    "MainHeadingColor": "",
+    "MainTextFont": "",
+    "MainTextFontSize": "",
+    "MainTextColor": "",
+    "LinkColor": "",
+    "LinkHoverColor": "",
+    "LinkUnderline": "",
+    "TabActiveColor": "",
+    "TabDeactiveColor": "",
+    "TableOutlineBorderEnabled": "",
+    "TableOutlineBorderColor": "",
+    "CustomPhrases": {
+        "PRIVACY_POLICY_TERM": {
+            "en-GB": "<p>This service made availble by Eurolandcom AB require collection of your personal information, sush as, but not restricted to, your name, address, company, e-mail and phone number. By using this service, you consent to the collection of your personal information.</p><p>Personal information collected will be used to schedule the meeting in connection to the IR Meeting service only and will not be disclosed to any third party without the consent of the user.</p><p>If you refuse to consent to the use of this service, you cannot use the service</p>"
+        }
+    }
+}

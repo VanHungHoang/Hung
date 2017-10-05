@@ -1,0 +1,107 @@
+﻿.other-attendees {
+    width: 975px;
+    height: auto;
+    margin: auto;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .content {
+        margin-top: 14px;
+        position: relative;
+
+        .content-otherAttendees {
+            margin-top: 50px;
+
+            .form {
+                .title-form {
+                    display: flex;
+
+                    .title-name {
+                        width: 33.33%;
+                        margin-bottom: 4px;
+
+                        p {
+                            width: 90%;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .form-item {
+                    display: flex;
+                    margin-bottom: 15px;
+
+                    .form-group {
+                        width: 33.33%;
+
+                        .row {
+
+                            .txt-value {
+                                width: 80%;
+                                height: 2.6em;
+                                padding: 0px 10px;
+                                font-size: 14px;
+                                border: 1px solid #666;
+                                border-radius: 3px;
+                            }
+
+                            .dropdown {
+                                width: 86.77%;
+                                height: 2.742em;
+                                font-size: 14px;
+                                border: 1px solid #666;
+                                border-radius: 3px;
+                                display: inline-block;
+                                position: relative;
+                                overflow: hidden;
+                                background: #f2f2f2;
+                                border-color: white #f7f7f7 #f5f5f5;
+                            }
+
+                            .dropdown:before, .dropdown:after {
+                                content: '';
+                                position: absolute;
+                                z-index: 2;
+                                top: 13px;
+                                right: 10px;
+                                width: 0;
+                                height: 0;
+                                border: 4px dashed;
+                                border-color: #888 transparent;
+                                pointer-events: none;
+                            }
+
+                            .dropdown:before {
+                                border-bottom-style: solid;
+                                border-top: none;
+                            }
+
+                            .dropdown:after {
+                                margin-top: 7px;
+                                border-top-style: solid;
+                                border-bottom: none;
+                            }
+
+                            .dropdown-select {
+                                border-radius: 3px;
+                                position: relative;
+                                width: 100%;
+                                height: 100%;
+                                margin: 0;
+                                padding: 6px 8px 6px 10px;
+                                line-height: 14px;
+                                font-size: 12px;
+                                text-shadow: 0 1px white;
+                                -webkit-appearance: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .add-number {
+                margin-top: 10px
+            }
+        }
+    }
+}

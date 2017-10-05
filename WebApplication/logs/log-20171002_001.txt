@@ -1,0 +1,1015 @@
+2017-10-02 12:54:24.405 +07:00 [Fatal] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address http://127.0.0.1:29224: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.tcp_getsockname(UvTcpHandle handle, SockAddr& addr, Int32& namelen)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.CreateListenSocket()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.CallbackAdapter`1.<>c.<.cctor>b__3_1(Object callback, Object state)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindLocalhostAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__21`1.MoveNext()
+2017-10-02 12:56:35.172 +07:00 [Fatal] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address http://127.0.0.1:29224: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.tcp_getsockname(UvTcpHandle handle, SockAddr& addr, Int32& namelen)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.CreateListenSocket()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.CallbackAdapter`1.<>c.<.cctor>b__3_1(Object callback, Object state)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindLocalhostAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__21`1.MoveNext()
+2017-10-02 12:58:12.565 +07:00 [Fatal] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address http://127.0.0.1:29224: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.tcp_getsockname(UvTcpHandle handle, SockAddr& addr, Int32& namelen)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.CreateListenSocket()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.CallbackAdapter`1.<>c.<.cctor>b__3_1(Object callback, Object state)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindLocalhostAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__21`1.MoveNext()
+2017-10-02 12:59:19.101 +07:00 [Information] 
+[at-loader] Using typescript@2.4.1 from typescript and "tsconfig.json" from D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication/tsconfig.json (in a forked process).
+
+2017-10-02 12:59:19.242 +07:00 [Fatal] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address http://127.0.0.1:29224: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -4091 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4091 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.tcp_getsockname(UvTcpHandle handle, SockAddr& addr, Int32& namelen)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.CreateListenSocket()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.CallbackAdapter`1.<>c.<.cctor>b__3_1(Object callback, Object state)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.<StartAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.<BindAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindEndpointAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindLocalhostAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAddressAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.<BindAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.<BindAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<StartAsync>d__21`1.MoveNext()
+2017-10-02 13:00:42.161 +07:00 [Information] 
+[at-loader] Using typescript@2.4.1 from typescript and "tsconfig.json" from D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication/tsconfig.json (in a forked process).
+
+2017-10-02 13:00:46.678 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/  
+2017-10-02 13:00:46.956 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 20.0484ms
+2017-10-02 13:00:47.297 +07:00 [Error] An unhandled exception has occurred while executing the request
+Euroland.NetCore.ToolsFramework.Setting.SettingFileNotFoundException: Missing request CompanyCode
+   at Euroland.NetCore.ToolsFramework.Setting.RequestSettingProviderFactory.GetSettingFileInfo()
+   at Euroland.NetCore.ToolsFramework.Setting.PhysicalSettingProviderFactoryBase.CreateSmartlySettingProvider()
+   at Euroland.NetCore.ToolsFramework.Setting.SettingManager.Create()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitTransient(TransientCallSite transientCallSite, ServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitTransient(TransientCallSite transientCallSite, ServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.<>c__DisplayClass22_0.<RealizeService>b__0(ServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Euroland.NetCore.ToolsFramework.Localization.RequestLocalizationMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-10-02 13:00:47.531 +07:00 [Information] Request finished in 872.0417ms 500 text/html; charset=utf-8
+2017-10-02 13:00:49.474 +07:00 [Error] (node:14280) DeprecationWarning: loaderUtils.parseQuery() received a non-string value which can be problematic, see https://github.com/webpack/loader-utils/issues/56
+2017-10-02 13:00:49.495 +07:00 [Error] 
+parseQuery() will be replaced with getOptions() in the next major version of loader-utils.
+2017-10-02 13:00:50.153 +07:00 [Information] 
+2017-10-02 13:00:50.166 +07:00 [Information] [at-loader] Checking started in a separate process...
+2017-10-02 13:00:50.214 +07:00 [Information] webpack built ebac594f04b42a7ed209 in 8387ms
+2017-10-02 13:00:51.658 +07:00 [Information] 
+[at-loader] Ok, 1.507 sec.
+2017-10-02 13:00:53.934 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:00:53.964 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:00:56.562 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:00:56.855 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 2885.6331ms
+2017-10-02 13:00:56.884 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:00:56.890 +07:00 [Information] Request finished in 2932.2063ms 200 text/html; charset=utf-8
+2017-10-02 13:00:56.899 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=_EiPGD2xO4gOwY_cGKQjyb5yEVxBT1n9owOZh86zTDo  
+2017-10-02 13:00:56.927 +07:00 [Information] Request finished in 83.6661ms 200 text/css; charset=UTF-8
+2017-10-02 13:00:56.954 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontEndVendor.dll.js.map  
+2017-10-02 13:00:56.988 +07:00 [Information] Request finished in 89.8138ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:00:57.003 +07:00 [Information] Sending file. Request path: '"/dist/frontEndVendor.dll.js.map"'. Physical path: '"D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\wwwroot\dist\frontEndVendor.dll.js.map"'
+2017-10-02 13:00:57.018 +07:00 [Information] Request finished in 79.9143ms 200 text/plain
+2017-10-02 13:00:57.051 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/a64133a3450d58ad60674b9f455b48c1.png  
+2017-10-02 13:00:57.104 +07:00 [Information] Request starting HTTP/1.1 HEAD http://localhost:29224/dist/webpack.config.js  
+2017-10-02 13:00:57.106 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:00:57.111 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/d02ea12d65ac06c8e75e08a1b2f70079.png  
+2017-10-02 13:00:57.194 +07:00 [Information] Request finished in 98.5178ms 200 image/png; charset=UTF-8
+2017-10-02 13:00:57.269 +07:00 [Information] Request finished in 115.399ms 200 image/png; charset=UTF-8
+2017-10-02 13:00:57.314 +07:00 [Information] Request finished in 250.9335ms 404 
+2017-10-02 13:00:57.342 +07:00 [Information] Request starting HTTP/1.1 HEAD http://localhost:29224/webpack.config.js  
+2017-10-02 13:00:57.356 +07:00 [Information] Request finished in 15.4781ms 404 
+2017-10-02 13:00:57.395 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:00:57.415 +07:00 [Information] Request finished in 14.0537ms 200 application/json; charset=UTF-8
+2017-10-02 13:00:57.447 +07:00 [Information] Request starting HTTP/1.1 HEAD http://localhost:29224/dist/webpack.config.js  
+2017-10-02 13:00:57.456 +07:00 [Information] Request finished in 9.4375ms 404 
+2017-10-02 13:00:57.464 +07:00 [Information] Request starting HTTP/1.1 HEAD http://localhost:29224/webpack.config.js  
+2017-10-02 13:00:57.473 +07:00 [Information] Request finished in 5.6082ms 404 
+2017-10-02 13:01:03.612 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:01:03.623 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:01:03.629 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:01:03.659 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 18.8915ms
+2017-10-02 13:01:03.664 +07:00 [Information] Request finished in 53.6779ms 200 text/html; charset=utf-8
+2017-10-02 13:01:03.676 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=_EiPGD2xO4gOwY_cGKQjyb5yEVxBT1n9owOZh86zTDo  
+2017-10-02 13:01:03.682 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:01:03.720 +07:00 [Information] Request finished in 15.3284ms 200 text/css; charset=UTF-8
+2017-10-02 13:01:03.730 +07:00 [Information] Request finished in 54.7975ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:01:03.795 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:01:03.819 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/a64133a3450d58ad60674b9f455b48c1.png  
+2017-10-02 13:01:03.825 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/d02ea12d65ac06c8e75e08a1b2f70079.png  
+2017-10-02 13:01:03.836 +07:00 [Information] Request finished in 18.5571ms 200 image/png; charset=UTF-8
+2017-10-02 13:01:03.870 +07:00 [Information] Request finished in 21.1602ms 200 image/png; charset=UTF-8
+2017-10-02 13:04:16.628 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:04:16.726 +07:00 [Information] 
+[at-loader] Using typescript@2.4.1 from typescript and "tsconfig.json" from D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication/tsconfig.json (in a forked process).
+
+2017-10-02 13:04:16.829 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:04:19.341 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:04:19.572 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 2783.7672ms
+2017-10-02 13:04:19.575 +07:00 [Information] Request finished in 2953.2143ms 200 text/html; charset=utf-8
+2017-10-02 13:04:19.584 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:04:19.601 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=_EiPGD2xO4gOwY_cGKQjyb5yEVxBT1n9owOZh86zTDo  
+2017-10-02 13:04:23.205 +07:00 [Error] (node:10204) DeprecationWarning: loaderUtils.parseQuery() received a non-string value which can be problematic, see https://github.com/webpack/loader-utils/issues/56
+2017-10-02 13:04:23.206 +07:00 [Error] 
+parseQuery() will be replaced with getOptions() in the next major version of loader-utils.
+2017-10-02 13:04:23.829 +07:00 [Information] 
+2017-10-02 13:04:23.829 +07:00 [Information] [at-loader] Checking started in a separate process...
+2017-10-02 13:04:23.871 +07:00 [Information] webpack built 003e263eb47d910c02f7 in 7484ms
+2017-10-02 13:04:24.016 +07:00 [Information] Request finished in 4432.2366ms 200 text/css; charset=UTF-8
+2017-10-02 13:04:24.020 +07:00 [Information] Request finished in 4419.1814ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:04:24.176 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:04:24.303 +07:00 [Information] Request finished in 125.7744ms 200 application/json; charset=UTF-8
+2017-10-02 13:04:24.556 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:04:24.558 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:04:24.641 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/a64133a3450d58ad60674b9f455b48c1.png  
+2017-10-02 13:04:24.684 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/d02ea12d65ac06c8e75e08a1b2f70079.png  
+2017-10-02 13:04:24.724 +07:00 [Information] Request finished in 165.5545ms 200 application/json; charset=UTF-8
+2017-10-02 13:04:25.174 +07:00 [Information] Request finished in 532.1345ms 200 image/png; charset=UTF-8
+2017-10-02 13:04:25.176 +07:00 [Information] Request finished in 491.5351ms 200 image/png; charset=UTF-8
+2017-10-02 13:04:25.238 +07:00 [Information] 
+[at-loader] Ok, 1.412 sec.
+2017-10-02 13:04:28.839 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:04:28.843 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:04:28.845 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:04:28.856 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 16.7667ms
+2017-10-02 13:04:28.857 +07:00 [Information] Request finished in 17.7719ms 200 text/html; charset=utf-8
+2017-10-02 13:04:28.866 +07:00 [Information] Request finished in 4309.7865ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:04:28.873 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:04:28.873 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=kpbbYc853fZQUXoMez3DQUQiQusqsA4qm9NCV8txJGc  
+2017-10-02 13:04:28.898 +07:00 [Information] Request finished in 22.3922ms 200 text/css; charset=UTF-8
+2017-10-02 13:04:28.900 +07:00 [Information] Request finished in 26.4935ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:04:28.943 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:04:28.949 +07:00 [Information] Request finished in 5.9241ms 200 application/json; charset=UTF-8
+2017-10-02 13:04:29.038 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:04:29.039 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:04:29.058 +07:00 [Information] Request finished in 18.1251ms 200 application/json; charset=UTF-8
+2017-10-02 13:04:29.080 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/a64133a3450d58ad60674b9f455b48c1.png  
+2017-10-02 13:04:29.082 +07:00 [Information] Request finished in 1.698ms 200 image/png; charset=UTF-8
+2017-10-02 13:04:29.083 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/d02ea12d65ac06c8e75e08a1b2f70079.png  
+2017-10-02 13:04:29.084 +07:00 [Information] Request finished in 1.2832ms 200 image/png; charset=UTF-8
+2017-10-02 13:08:36.303 +07:00 [Information] DLL: Checking if DLLs are valid.
+2017-10-02 13:08:36.326 +07:00 [Information] DLL: All DLLs are valid.
+2017-10-02 13:08:36.350 +07:00 [Information] webpack building...
+2017-10-02 13:08:36.941 +07:00 [Information] 
+2017-10-02 13:08:36.941 +07:00 [Information] [at-loader] Checking started in a separate process...
+2017-10-02 13:08:37.123 +07:00 [Information] webpack built 6dbf7b74357754d004a9 in 707ms
+2017-10-02 13:08:37.159 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/003e263eb47d910c02f7.hot-update.json  
+2017-10-02 13:08:37.269 +07:00 [Information] Request finished in 109.6763ms 200 application/json; charset=UTF-8
+2017-10-02 13:08:37.289 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/2.003e263eb47d910c02f7.hot-update.js  
+2017-10-02 13:08:37.291 +07:00 [Information] Request finished in 3.0633ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:08:37.328 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/2.003e263eb47d910c02f7.hot-update.js.map  
+2017-10-02 13:08:37.342 +07:00 [Information] Request finished in 13.513ms 200 application/json; charset=UTF-8
+2017-10-02 13:08:37.462 +07:00 [Information] DLL: Checking if DLLs are valid.
+2017-10-02 13:08:37.471 +07:00 [Information] DLL: All DLLs are valid.
+2017-10-02 13:08:37.486 +07:00 [Information] webpack building...
+2017-10-02 13:08:37.924 +07:00 [Information] 
+[at-loader] Ok, 0.991 sec.
+2017-10-02 13:08:38.047 +07:00 [Information] 
+2017-10-02 13:08:38.047 +07:00 [Information] [at-loader] Checking started in a separate process...
+2017-10-02 13:08:38.088 +07:00 [Information] webpack built 28ab32bd6381a1231c2a in 595ms
+2017-10-02 13:08:38.141 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/6dbf7b74357754d004a9.hot-update.json  
+2017-10-02 13:08:38.186 +07:00 [Information] Request finished in 45.0178ms 200 application/json; charset=UTF-8
+2017-10-02 13:08:38.206 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/2.6dbf7b74357754d004a9.hot-update.js  
+2017-10-02 13:08:38.209 +07:00 [Information] Request finished in 2.178ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:08:38.212 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/2.6dbf7b74357754d004a9.hot-update.js.map  
+2017-10-02 13:08:38.214 +07:00 [Information] Request finished in 1.371ms 200 application/json; charset=UTF-8
+2017-10-02 13:08:38.807 +07:00 [Information] 
+[at-loader] Ok, 1.03 sec.
+2017-10-02 13:08:40.101 +07:00 [Information] DLL: Checking if DLLs are valid.
+2017-10-02 13:08:40.122 +07:00 [Information] DLL: All DLLs are valid.
+2017-10-02 13:08:40.139 +07:00 [Information] webpack building...
+2017-10-02 13:08:40.453 +07:00 [Information] 
+2017-10-02 13:08:40.453 +07:00 [Information] [at-loader] Checking started in a separate process...
+2017-10-02 13:08:40.489 +07:00 [Information] webpack built 0242883c00bac81786e0 in 361ms
+2017-10-02 13:08:40.494 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/28ab32bd6381a1231c2a.hot-update.json  
+2017-10-02 13:08:40.520 +07:00 [Information] Request finished in 26.2781ms 200 application/json; charset=UTF-8
+2017-10-02 13:08:40.526 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/2.28ab32bd6381a1231c2a.hot-update.js  
+2017-10-02 13:08:40.539 +07:00 [Information] Request finished in 12.9325ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:08:40.544 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/2.28ab32bd6381a1231c2a.hot-update.js.map  
+2017-10-02 13:08:40.546 +07:00 [Information] Request finished in 1.8334ms 200 application/json; charset=UTF-8
+2017-10-02 13:08:40.961 +07:00 [Information] 
+[at-loader] Ok, 0.52 sec.
+2017-10-02 13:09:00.390 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:09:00.393 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:09:00.394 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:09:00.402 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 9.9971ms
+2017-10-02 13:09:00.402 +07:00 [Information] Request finished in 12.0549ms 200 text/html; charset=utf-8
+2017-10-02 13:09:00.407 +07:00 [Information] Request finished in 271368.9664ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:09:00.420 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=wcaHEsxNwkN61QXY7VTN1i8lZBSQPjgPLfVPmDCLgoM  
+2017-10-02 13:09:00.421 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:09:00.441 +07:00 [Information] Request finished in 20.9985ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:09:00.449 +07:00 [Information] Request finished in 28.4164ms 200 text/css; charset=UTF-8
+2017-10-02 13:09:00.516 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:09:00.519 +07:00 [Information] Request finished in 2.9366ms 200 application/json; charset=UTF-8
+2017-10-02 13:09:00.538 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:09:00.550 +07:00 [Information] Request finished in 10.7175ms 200 application/json; charset=UTF-8
+2017-10-02 13:09:00.633 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:09:02.744 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:09:02.747 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:09:02.748 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:09:02.749 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 4.7782ms
+2017-10-02 13:09:02.749 +07:00 [Information] Request finished in 5.4834ms 200 text/html; charset=utf-8
+2017-10-02 13:09:02.754 +07:00 [Information] Request finished in 2120.5198ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:09:02.768 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:09:02.768 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=wcaHEsxNwkN61QXY7VTN1i8lZBSQPjgPLfVPmDCLgoM  
+2017-10-02 13:09:02.790 +07:00 [Information] Request finished in 20.7905ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:09:02.791 +07:00 [Information] Request finished in 22.1842ms 200 text/css; charset=UTF-8
+2017-10-02 13:09:02.858 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:09:02.872 +07:00 [Information] Request finished in 14.3384ms 200 application/json; charset=UTF-8
+2017-10-02 13:09:02.917 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:09:02.925 +07:00 [Information] Request finished in 7.5113ms 200 application/json; charset=UTF-8
+2017-10-02 13:09:02.981 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:09:11.159 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:09:11.163 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:09:11.164 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:09:11.165 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 5.3308ms
+2017-10-02 13:09:11.165 +07:00 [Information] Request finished in 5.7329ms 200 text/html; charset=utf-8
+2017-10-02 13:09:11.169 +07:00 [Information] Request finished in 8188.0493ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:09:11.181 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:09:11.181 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=wcaHEsxNwkN61QXY7VTN1i8lZBSQPjgPLfVPmDCLgoM  
+2017-10-02 13:09:11.199 +07:00 [Information] Request finished in 16.6039ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:09:11.200 +07:00 [Information] Request finished in 19.3169ms 200 text/css; charset=UTF-8
+2017-10-02 13:09:11.243 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:09:11.251 +07:00 [Information] Request finished in 8.3401ms 200 application/json; charset=UTF-8
+2017-10-02 13:09:11.305 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:09:11.312 +07:00 [Information] Request finished in 5.9647ms 200 application/json; charset=UTF-8
+2017-10-02 13:09:11.354 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:09:31.070 +07:00 [Information] DLL: Checking if DLLs are valid.
+2017-10-02 13:09:31.095 +07:00 [Information] DLL: All DLLs are valid.
+2017-10-02 13:09:31.118 +07:00 [Information] webpack building...
+2017-10-02 13:09:31.719 +07:00 [Information] 
+2017-10-02 13:09:31.719 +07:00 [Information] [at-loader] Checking started in a separate process...
+2017-10-02 13:09:31.758 +07:00 [Information] webpack built 57a00352b6489f878d11 in 663ms
+2017-10-02 13:09:31.767 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/0242883c00bac81786e0.hot-update.json  
+2017-10-02 13:09:31.829 +07:00 [Information] Request finished in 62.3065ms 200 application/json; charset=UTF-8
+2017-10-02 13:09:31.836 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/2.0242883c00bac81786e0.hot-update.js  
+2017-10-02 13:09:31.850 +07:00 [Information] Request finished in 14.6264ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:09:31.874 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/2.0242883c00bac81786e0.hot-update.js.map  
+2017-10-02 13:09:31.884 +07:00 [Information] Request finished in 10.8307ms 200 application/json; charset=UTF-8
+2017-10-02 13:09:32.037 +07:00 [Information] DLL: Checking if DLLs are valid.
+2017-10-02 13:09:32.045 +07:00 [Information] DLL: All DLLs are valid.
+2017-10-02 13:09:32.080 +07:00 [Information] webpack building...
+2017-10-02 13:09:32.409 +07:00 [Information] 
+[at-loader] Ok, 0.691 sec.
+2017-10-02 13:09:32.710 +07:00 [Information] 
+2017-10-02 13:09:32.710 +07:00 [Information] [at-loader] Checking started in a separate process...
+2017-10-02 13:09:32.737 +07:00 [Information] webpack built fa45cb17dc3701c059e8 in 683ms
+2017-10-02 13:09:32.743 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/57a00352b6489f878d11.hot-update.json  
+2017-10-02 13:09:32.771 +07:00 [Information] Request finished in 28.6913ms 200 application/json; charset=UTF-8
+2017-10-02 13:09:33.178 +07:00 [Information] 
+[at-loader] Ok, 0.468 sec.
+2017-10-02 13:09:36.807 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:09:36.810 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:09:36.812 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:09:36.817 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 9.7829ms
+2017-10-02 13:09:36.817 +07:00 [Information] Request finished in 10.4028ms 200 text/html; charset=utf-8
+2017-10-02 13:09:36.824 +07:00 [Information] Request finished in 25470.7544ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:09:36.834 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:09:36.834 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=7oleA45NfpN_SlArGS5KG4CVFKTDe2y9ebuAp4GtPTc  
+2017-10-02 13:09:36.849 +07:00 [Information] Request finished in 13.8785ms 200 text/css; charset=UTF-8
+2017-10-02 13:09:36.853 +07:00 [Information] Request finished in 17.0859ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:09:36.901 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:09:36.903 +07:00 [Information] Request finished in 2.2125ms 200 application/json; charset=UTF-8
+2017-10-02 13:09:36.935 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:09:36.949 +07:00 [Information] Request finished in 14.2703ms 200 application/json; charset=UTF-8
+2017-10-02 13:09:36.988 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:09:47.151 +07:00 [Information] DLL: Checking if DLLs are valid.
+2017-10-02 13:09:47.163 +07:00 [Information] DLL: All DLLs are valid.
+2017-10-02 13:09:47.190 +07:00 [Information] webpack building...
+2017-10-02 13:09:47.487 +07:00 [Information] 
+2017-10-02 13:09:47.487 +07:00 [Information] [at-loader] Checking started in a separate process...
+2017-10-02 13:09:47.518 +07:00 [Information] webpack built 28547082486006c2f0ca in 346ms
+2017-10-02 13:09:47.522 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/fa45cb17dc3701c059e8.hot-update.json  
+2017-10-02 13:09:47.557 +07:00 [Information] Request finished in 34.5825ms 200 application/json; charset=UTF-8
+2017-10-02 13:09:47.562 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/2.fa45cb17dc3701c059e8.hot-update.js  
+2017-10-02 13:09:47.575 +07:00 [Information] Request finished in 12.6293ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:09:47.584 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/2.fa45cb17dc3701c059e8.hot-update.js.map  
+2017-10-02 13:09:47.592 +07:00 [Information] Request finished in 6.411ms 200 application/json; charset=UTF-8
+2017-10-02 13:09:47.757 +07:00 [Information] DLL: Checking if DLLs are valid.
+2017-10-02 13:09:47.765 +07:00 [Information] DLL: All DLLs are valid.
+2017-10-02 13:09:47.778 +07:00 [Information] webpack building...
+2017-10-02 13:09:47.934 +07:00 [Information] 
+[at-loader] Ok, 0.449 sec.
+2017-10-02 13:09:48.258 +07:00 [Information] 
+2017-10-02 13:09:48.258 +07:00 [Information] [at-loader] Checking started in a separate process...
+2017-10-02 13:09:48.289 +07:00 [Information] webpack built 7f1eb428cac456d2434b in 518ms
+2017-10-02 13:09:48.297 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/28547082486006c2f0ca.hot-update.json  
+2017-10-02 13:09:48.318 +07:00 [Information] Request finished in 20.7015ms 200 application/json; charset=UTF-8
+2017-10-02 13:09:48.674 +07:00 [Information] 
+[at-loader] Ok, 0.416 sec.
+2017-10-02 13:09:51.256 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:09:51.259 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:09:51.261 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:09:51.267 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 10.6416ms
+2017-10-02 13:09:51.268 +07:00 [Information] Request finished in 11.0342ms 200 text/html; charset=utf-8
+2017-10-02 13:09:51.272 +07:00 [Information] Request finished in 14283.8504ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:09:51.282 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=lAAW7ETZa-L2tnBy3HXBW1EJv9rmjSUZ4zAziLOMYVM  
+2017-10-02 13:09:51.283 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:09:51.300 +07:00 [Information] Request finished in 14.9317ms 200 text/css; charset=UTF-8
+2017-10-02 13:09:51.303 +07:00 [Information] Request finished in 20.5854ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:09:51.351 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:09:51.358 +07:00 [Information] Request finished in 7.1483ms 200 application/json; charset=UTF-8
+2017-10-02 13:09:51.382 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:09:51.395 +07:00 [Information] Request finished in 12.8ms 200 application/json; charset=UTF-8
+2017-10-02 13:09:51.434 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:10:25.368 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/  
+2017-10-02 13:10:25.373 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 2.272ms
+2017-10-02 13:10:25.446 +07:00 [Error] An unhandled exception has occurred while executing the request
+Euroland.NetCore.ToolsFramework.Setting.SettingFileNotFoundException: Missing request CompanyCode
+   at Euroland.NetCore.ToolsFramework.Setting.RequestSettingProviderFactory.GetSettingFileInfo()
+   at Euroland.NetCore.ToolsFramework.Setting.PhysicalSettingProviderFactoryBase.CreateSmartlySettingProvider()
+   at Euroland.NetCore.ToolsFramework.Setting.SettingManager.Create()
+   at lambda_method(Closure , ServiceProvider )
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Euroland.NetCore.ToolsFramework.Localization.RequestLocalizationMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-10-02 13:10:25.633 +07:00 [Information] Request finished in 265.3659ms 500 text/html; charset=utf-8
+2017-10-02 13:10:28.987 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:10:28.989 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:10:28.990 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:10:28.991 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 3.8916ms
+2017-10-02 13:10:28.991 +07:00 [Information] Request finished in 4.6773ms 200 text/html; charset=utf-8
+2017-10-02 13:10:29.006 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:10:29.006 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=lAAW7ETZa-L2tnBy3HXBW1EJv9rmjSUZ4zAziLOMYVM  
+2017-10-02 13:10:29.027 +07:00 [Information] Request finished in 20.6954ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:10:29.037 +07:00 [Information] Request finished in 31.6348ms 200 text/css; charset=UTF-8
+2017-10-02 13:10:29.101 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontEndVendor.dll.js.map  
+2017-10-02 13:10:29.110 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:10:29.113 +07:00 [Information] Sending file. Request path: '"/dist/frontEndVendor.dll.js.map"'. Physical path: '"D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\wwwroot\dist\frontEndVendor.dll.js.map"'
+2017-10-02 13:10:29.128 +07:00 [Information] Request finished in 27.3604ms 200 text/plain
+2017-10-02 13:10:29.133 +07:00 [Information] Request starting HTTP/1.1 HEAD http://localhost:29224/dist/webpack.config.js  
+2017-10-02 13:10:29.146 +07:00 [Information] Request finished in 13.369ms 404 
+2017-10-02 13:10:29.147 +07:00 [Information] Request starting HTTP/1.1 HEAD http://localhost:29224/webpack.config.js  
+2017-10-02 13:10:29.149 +07:00 [Information] Request finished in 1.1216ms 404 
+2017-10-02 13:10:29.171 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:10:29.184 +07:00 [Information] Request finished in 12.7544ms 200 application/json; charset=UTF-8
+2017-10-02 13:10:29.185 +07:00 [Information] Request starting HTTP/1.1 HEAD http://localhost:29224/dist/webpack.config.js  
+2017-10-02 13:10:29.188 +07:00 [Information] Request finished in 3.266ms 404 
+2017-10-02 13:10:29.189 +07:00 [Information] Request starting HTTP/1.1 HEAD http://localhost:29224/webpack.config.js  
+2017-10-02 13:10:29.189 +07:00 [Information] Request finished in 0.4586ms 404 
+2017-10-02 13:10:39.862 +07:00 [Information] Request finished in 10752.1208ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:10:43.721 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:10:43.724 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:10:43.725 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:10:43.732 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 10.3848ms
+2017-10-02 13:10:43.732 +07:00 [Information] Request finished in 11.2172ms 200 text/html; charset=utf-8
+2017-10-02 13:10:43.739 +07:00 [Information] Request finished in 52305.1436ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:10:43.747 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=VfG8QtRRdlTM756A0P3eyEqjNEctWrNnl8gDZ35Q0Ws  
+2017-10-02 13:10:43.747 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:10:43.760 +07:00 [Information] Request finished in 12.3302ms 200 text/css; charset=UTF-8
+2017-10-02 13:10:43.765 +07:00 [Information] Request finished in 17.5717ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:10:43.823 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:10:43.832 +07:00 [Information] Request finished in 8.5202ms 200 application/json; charset=UTF-8
+2017-10-02 13:10:43.894 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:10:44.029 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:10:44.042 +07:00 [Information] Request finished in 12.4151ms 200 application/json; charset=UTF-8
+2017-10-02 13:10:48.646 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:10:48.648 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:10:48.649 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:10:48.650 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 3.7259ms
+2017-10-02 13:10:48.650 +07:00 [Information] Request finished in 4.1021ms 200 text/html; charset=utf-8
+2017-10-02 13:10:48.656 +07:00 [Information] Request finished in 4762.1844ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:10:48.667 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:10:48.669 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendVendor.dll.js?v=8yfipaJtkCRMZFs1CIbbunDSw9vNOtUyZm8ee2FeBEE  
+2017-10-02 13:10:48.669 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=VfG8QtRRdlTM756A0P3eyEqjNEctWrNnl8gDZ35Q0Ws  
+2017-10-02 13:10:48.680 +07:00 [Information] Request finished in 8.825ms 200 text/css; charset=UTF-8
+2017-10-02 13:10:48.689 +07:00 [Information] Sending file. Request path: '"/dist/frontendVendor.dll.js"'. Physical path: '"D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\wwwroot\dist\frontendVendor.dll.js"'
+2017-10-02 13:10:48.691 +07:00 [Information] Request finished in 20.441ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:10:48.705 +07:00 [Information] Request finished in 34.7315ms 200 application/javascript
+2017-10-02 13:10:48.730 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:10:48.734 +07:00 [Information] Request finished in 3.8494ms 200 application/json; charset=UTF-8
+2017-10-02 13:10:48.809 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:10:48.824 +07:00 [Information] Request finished in 14.7794ms 200 application/json; charset=UTF-8
+2017-10-02 13:10:48.866 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:10:49.884 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:10:49.887 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:10:49.888 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:10:49.890 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 5.9085ms
+2017-10-02 13:10:49.890 +07:00 [Information] Request finished in 6.4976ms 200 text/html; charset=utf-8
+2017-10-02 13:10:49.894 +07:00 [Information] Request finished in 1028.5062ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:10:49.907 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:10:49.908 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendVendor.dll.js?v=8yfipaJtkCRMZFs1CIbbunDSw9vNOtUyZm8ee2FeBEE  
+2017-10-02 13:10:49.908 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=VfG8QtRRdlTM756A0P3eyEqjNEctWrNnl8gDZ35Q0Ws  
+2017-10-02 13:10:49.922 +07:00 [Information] Request finished in 12.9686ms 200 text/css; charset=UTF-8
+2017-10-02 13:10:49.928 +07:00 [Information] Request finished in 18.7007ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:10:49.929 +07:00 [Information] Sending file. Request path: '"/dist/frontendVendor.dll.js"'. Physical path: '"D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\wwwroot\dist\frontendVendor.dll.js"'
+2017-10-02 13:10:49.940 +07:00 [Information] Request finished in 30.6732ms 200 application/javascript
+2017-10-02 13:10:49.965 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:10:49.972 +07:00 [Information] Request finished in 6.7639ms 200 application/json; charset=UTF-8
+2017-10-02 13:10:50.042 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:10:50.059 +07:00 [Information] Request finished in 16.6047ms 200 application/json; charset=UTF-8
+2017-10-02 13:10:50.092 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:10:50.382 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:10:50.386 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:10:50.387 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:10:50.388 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 5.593ms
+2017-10-02 13:10:50.388 +07:00 [Information] Request finished in 6.2732ms 200 text/html; charset=utf-8
+2017-10-02 13:10:50.391 +07:00 [Information] Request finished in 298.8913ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:10:50.403 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:10:50.403 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendVendor.dll.js?v=8yfipaJtkCRMZFs1CIbbunDSw9vNOtUyZm8ee2FeBEE  
+2017-10-02 13:10:50.408 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=VfG8QtRRdlTM756A0P3eyEqjNEctWrNnl8gDZ35Q0Ws  
+2017-10-02 13:10:50.414 +07:00 [Information] Request finished in 8.1148ms 200 text/css; charset=UTF-8
+2017-10-02 13:10:50.416 +07:00 [Information] Sending file. Request path: '"/dist/frontendVendor.dll.js"'. Physical path: '"D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\wwwroot\dist\frontendVendor.dll.js"'
+2017-10-02 13:10:50.426 +07:00 [Information] Request finished in 20.9505ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:10:50.427 +07:00 [Information] Request finished in 23.9893ms 200 application/javascript
+2017-10-02 13:10:50.441 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:10:50.443 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:10:50.444 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:10:50.445 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 4.0397ms
+2017-10-02 13:10:50.445 +07:00 [Information] Request finished in 4.489ms 200 text/html; charset=utf-8
+2017-10-02 13:10:50.465 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:10:50.465 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendVendor.dll.js?v=8yfipaJtkCRMZFs1CIbbunDSw9vNOtUyZm8ee2FeBEE  
+2017-10-02 13:10:50.466 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=VfG8QtRRdlTM756A0P3eyEqjNEctWrNnl8gDZ35Q0Ws  
+2017-10-02 13:10:50.487 +07:00 [Information] Request finished in 21.7739ms 200 text/css; charset=UTF-8
+2017-10-02 13:10:50.487 +07:00 [Information] Sending file. Request path: '"/dist/frontendVendor.dll.js"'. Physical path: '"D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\wwwroot\dist\frontendVendor.dll.js"'
+2017-10-02 13:10:50.491 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:10:50.494 +07:00 [Information] Request finished in 28.9448ms 200 application/javascript
+2017-10-02 13:10:50.495 +07:00 [Information] Request finished in 29.5257ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:10:50.499 +07:00 [Information] Request finished in 7.9224ms 200 application/json; charset=UTF-8
+2017-10-02 13:10:50.540 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:10:50.540 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:10:50.543 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:10:50.544 +07:00 [Information] Request finished in 4.4508ms 200 application/json; charset=UTF-8
+2017-10-02 13:10:50.545 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:10:50.547 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 6.3643ms
+2017-10-02 13:10:50.547 +07:00 [Information] Request finished in 7.5286ms 200 text/html; charset=utf-8
+2017-10-02 13:10:50.562 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:10:50.562 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendVendor.dll.js?v=8yfipaJtkCRMZFs1CIbbunDSw9vNOtUyZm8ee2FeBEE  
+2017-10-02 13:10:50.563 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=VfG8QtRRdlTM756A0P3eyEqjNEctWrNnl8gDZ35Q0Ws  
+2017-10-02 13:10:50.575 +07:00 [Information] Request finished in 11.136ms 200 text/css; charset=UTF-8
+2017-10-02 13:10:50.579 +07:00 [Information] Sending file. Request path: '"/dist/frontendVendor.dll.js"'. Physical path: '"D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\wwwroot\dist\frontendVendor.dll.js"'
+2017-10-02 13:10:50.585 +07:00 [Information] Request finished in 17.4761ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:10:50.592 +07:00 [Information] Request finished in 27.5877ms 200 application/javascript
+2017-10-02 13:10:50.624 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:10:50.626 +07:00 [Information] Request finished in 1.5634ms 200 application/json; charset=UTF-8
+2017-10-02 13:10:50.723 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:10:50.771 +07:00 [Information] Request finished in 47.7785ms 200 application/json; charset=UTF-8
+2017-10-02 13:10:50.801 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:10:51.065 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:10:51.069 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:10:51.070 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:10:51.071 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 5.2332ms
+2017-10-02 13:10:51.071 +07:00 [Information] Request finished in 5.9442ms 200 text/html; charset=utf-8
+2017-10-02 13:10:51.074 +07:00 [Information] Request finished in 272.5594ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:10:51.085 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:10:51.086 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=VfG8QtRRdlTM756A0P3eyEqjNEctWrNnl8gDZ35Q0Ws  
+2017-10-02 13:10:51.086 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendVendor.dll.js?v=8yfipaJtkCRMZFs1CIbbunDSw9vNOtUyZm8ee2FeBEE  
+2017-10-02 13:10:51.093 +07:00 [Information] Request finished in 7.3033ms 200 text/css; charset=UTF-8
+2017-10-02 13:10:51.095 +07:00 [Information] Sending file. Request path: '"/dist/frontendVendor.dll.js"'. Physical path: '"D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\wwwroot\dist\frontendVendor.dll.js"'
+2017-10-02 13:10:51.098 +07:00 [Information] Request finished in 12.7417ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:10:51.106 +07:00 [Information] Request finished in 19.9741ms 200 application/javascript
+2017-10-02 13:10:51.148 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:10:51.152 +07:00 [Information] Request finished in 3.1023ms 200 application/json; charset=UTF-8
+2017-10-02 13:10:51.223 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:10:51.237 +07:00 [Information] Request finished in 14.8578ms 200 application/json; charset=UTF-8
+2017-10-02 13:10:51.278 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:11:11.457 +07:00 [Information] DLL: Checking if DLLs are valid.
+2017-10-02 13:11:11.466 +07:00 [Information] DLL: All DLLs are valid.
+2017-10-02 13:11:11.493 +07:00 [Information] webpack building...
+2017-10-02 13:11:12.130 +07:00 [Information] 
+2017-10-02 13:11:12.130 +07:00 [Information] [at-loader] Checking started in a separate process...
+2017-10-02 13:11:12.180 +07:00 [Information] webpack built 4a6b838fa437023e3fbd in 687ms
+2017-10-02 13:11:12.187 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/7f1eb428cac456d2434b.hot-update.json  
+2017-10-02 13:11:12.215 +07:00 [Information] Request finished in 27.5331ms 200 application/json; charset=UTF-8
+2017-10-02 13:11:12.658 +07:00 [Information] 
+[at-loader] Ok, 0.531 sec.
+2017-10-02 13:11:16.094 +07:00 [Information] DLL: Checking if DLLs are valid.
+2017-10-02 13:11:16.100 +07:00 [Information] DLL: All DLLs are valid.
+2017-10-02 13:11:16.113 +07:00 [Information] webpack building...
+2017-10-02 13:11:16.520 +07:00 [Information] 
+2017-10-02 13:11:16.520 +07:00 [Information] [at-loader] Checking started in a separate process...
+2017-10-02 13:11:16.549 +07:00 [Information] webpack built a1d8ef1a7b29806ed8f3 in 434ms
+2017-10-02 13:11:16.553 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/4a6b838fa437023e3fbd.hot-update.json  
+2017-10-02 13:11:16.578 +07:00 [Information] Request finished in 24.6765ms 200 application/json; charset=UTF-8
+2017-10-02 13:11:16.928 +07:00 [Information] 
+[at-loader] Ok, 0.409 sec.
+2017-10-02 13:11:22.735 +07:00 [Information] DLL: Checking if DLLs are valid.
+2017-10-02 13:11:22.746 +07:00 [Information] DLL: All DLLs are valid.
+2017-10-02 13:11:22.758 +07:00 [Information] webpack building...
+2017-10-02 13:11:23.107 +07:00 [Information] 
+2017-10-02 13:11:23.107 +07:00 [Information] [at-loader] Checking started in a separate process...
+2017-10-02 13:11:23.139 +07:00 [Information] webpack built 5afd7525d462b6aec1d1 in 384ms
+2017-10-02 13:11:23.142 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/a1d8ef1a7b29806ed8f3.hot-update.json  
+2017-10-02 13:11:23.177 +07:00 [Information] Request finished in 35.1027ms 200 application/json; charset=UTF-8
+2017-10-02 13:11:23.381 +07:00 [Information] DLL: Checking if DLLs are valid.
+2017-10-02 13:11:23.389 +07:00 [Information] DLL: All DLLs are valid.
+2017-10-02 13:11:23.403 +07:00 [Information] webpack building...
+2017-10-02 13:11:23.541 +07:00 [Information] 
+[at-loader] Ok, 0.434 sec.
+2017-10-02 13:11:23.989 +07:00 [Information] 
+2017-10-02 13:11:23.989 +07:00 [Information] [at-loader] Checking started in a separate process...
+2017-10-02 13:11:24.022 +07:00 [Information] webpack built 5b25ce640ca36eb40892 in 617ms
+2017-10-02 13:11:24.026 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/5afd7525d462b6aec1d1.hot-update.json  
+2017-10-02 13:11:24.052 +07:00 [Information] Request finished in 26.057ms 200 application/json; charset=UTF-8
+2017-10-02 13:11:24.416 +07:00 [Information] 
+[at-loader] Ok, 0.43 sec.
+2017-10-02 13:11:28.359 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:11:28.361 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:11:28.361 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:11:28.371 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 11.6529ms
+2017-10-02 13:11:28.371 +07:00 [Information] Request finished in 12.2999ms 200 text/html; charset=utf-8
+2017-10-02 13:11:28.374 +07:00 [Information] Request finished in 37096.4788ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:11:28.390 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=EvGIW1BZ_l4n9KY3BqIdAKUFQBn2y57-x5p390nL5Oc  
+2017-10-02 13:11:28.392 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendVendor.dll.js?v=8yfipaJtkCRMZFs1CIbbunDSw9vNOtUyZm8ee2FeBEE  
+2017-10-02 13:11:28.392 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:11:28.407 +07:00 [Information] Request finished in 18.0451ms 200 text/css; charset=UTF-8
+2017-10-02 13:11:28.410 +07:00 [Information] Sending file. Request path: '"/dist/frontendVendor.dll.js"'. Physical path: '"D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\wwwroot\dist\frontendVendor.dll.js"'
+2017-10-02 13:11:28.416 +07:00 [Information] Request finished in 25.8572ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:11:28.424 +07:00 [Information] Request finished in 33.8642ms 200 application/javascript
+2017-10-02 13:11:28.456 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:11:28.458 +07:00 [Information] Request finished in 2.4242ms 200 application/json; charset=UTF-8
+2017-10-02 13:11:28.513 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:11:28.533 +07:00 [Information] Request finished in 19.4917ms 200 application/json; charset=UTF-8
+2017-10-02 13:11:28.582 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:11:29.516 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:11:29.518 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:11:29.519 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:11:29.520 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 3.0777ms
+2017-10-02 13:11:29.520 +07:00 [Information] Request finished in 3.4067ms 200 text/html; charset=utf-8
+2017-10-02 13:11:29.523 +07:00 [Information] Request finished in 941.213ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:11:29.534 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:11:29.534 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendVendor.dll.js?v=8yfipaJtkCRMZFs1CIbbunDSw9vNOtUyZm8ee2FeBEE  
+2017-10-02 13:11:29.535 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=EvGIW1BZ_l4n9KY3BqIdAKUFQBn2y57-x5p390nL5Oc  
+2017-10-02 13:11:29.541 +07:00 [Information] Request finished in 4.9792ms 200 text/css; charset=UTF-8
+2017-10-02 13:11:29.548 +07:00 [Information] Sending file. Request path: '"/dist/frontendVendor.dll.js"'. Physical path: '"D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\wwwroot\dist\frontendVendor.dll.js"'
+2017-10-02 13:11:29.551 +07:00 [Information] Request finished in 14.1407ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:11:29.556 +07:00 [Information] Request finished in 20.3101ms 200 application/javascript
+2017-10-02 13:11:29.588 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:11:29.592 +07:00 [Information] Request finished in 3.8822ms 200 application/json; charset=UTF-8
+2017-10-02 13:11:29.669 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:11:29.682 +07:00 [Information] Request finished in 12.5472ms 200 application/json; charset=UTF-8
+2017-10-02 13:11:29.727 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:11:30.030 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:11:30.036 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:11:30.036 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:11:30.037 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 6.912ms
+2017-10-02 13:11:30.038 +07:00 [Information] Request finished in 7.6931ms 200 text/html; charset=utf-8
+2017-10-02 13:11:30.041 +07:00 [Information] Request finished in 314.1401ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:11:30.059 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:11:30.059 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendVendor.dll.js?v=8yfipaJtkCRMZFs1CIbbunDSw9vNOtUyZm8ee2FeBEE  
+2017-10-02 13:11:30.059 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=EvGIW1BZ_l4n9KY3BqIdAKUFQBn2y57-x5p390nL5Oc  
+2017-10-02 13:11:30.076 +07:00 [Information] Request finished in 17.4707ms 200 text/css; charset=UTF-8
+2017-10-02 13:11:30.080 +07:00 [Information] Sending file. Request path: '"/dist/frontendVendor.dll.js"'. Physical path: '"D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\wwwroot\dist\frontendVendor.dll.js"'
+2017-10-02 13:11:30.085 +07:00 [Information] Request finished in 25.9241ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:11:30.087 +07:00 [Information] Request finished in 28.1386ms 200 application/javascript
+2017-10-02 13:11:30.133 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:11:30.135 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:11:30.135 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:11:30.136 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:11:30.136 +07:00 [Information] Request finished in 1.4966ms 200 application/json; charset=UTF-8
+2017-10-02 13:11:30.137 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 3.1479ms
+2017-10-02 13:11:30.137 +07:00 [Information] Request finished in 3.6611ms 200 text/html; charset=utf-8
+2017-10-02 13:11:30.153 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:11:30.153 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendVendor.dll.js?v=8yfipaJtkCRMZFs1CIbbunDSw9vNOtUyZm8ee2FeBEE  
+2017-10-02 13:11:30.153 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=EvGIW1BZ_l4n9KY3BqIdAKUFQBn2y57-x5p390nL5Oc  
+2017-10-02 13:11:30.157 +07:00 [Information] Request finished in 4.0184ms 200 text/css; charset=UTF-8
+2017-10-02 13:11:30.165 +07:00 [Information] Sending file. Request path: '"/dist/frontendVendor.dll.js"'. Physical path: '"D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\wwwroot\dist\frontendVendor.dll.js"'
+2017-10-02 13:11:30.168 +07:00 [Information] Request finished in 14.1411ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:11:30.170 +07:00 [Information] Request finished in 16.6367ms 200 application/javascript
+2017-10-02 13:11:30.207 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:11:30.209 +07:00 [Information] Request finished in 1.7755ms 200 application/json; charset=UTF-8
+2017-10-02 13:11:30.299 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:11:30.317 +07:00 [Information] Request finished in 17.8199ms 200 application/json; charset=UTF-8
+2017-10-02 13:11:30.357 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:11:30.643 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:11:30.647 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:11:30.648 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:11:30.649 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 5.8539ms
+2017-10-02 13:11:30.650 +07:00 [Information] Request finished in 6.8795ms 200 text/html; charset=utf-8
+2017-10-02 13:11:30.653 +07:00 [Information] Request finished in 295.8701ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:11:30.670 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:11:30.670 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendVendor.dll.js?v=8yfipaJtkCRMZFs1CIbbunDSw9vNOtUyZm8ee2FeBEE  
+2017-10-02 13:11:30.670 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=EvGIW1BZ_l4n9KY3BqIdAKUFQBn2y57-x5p390nL5Oc  
+2017-10-02 13:11:30.677 +07:00 [Information] Sending file. Request path: '"/dist/frontendVendor.dll.js"'. Physical path: '"D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\wwwroot\dist\frontendVendor.dll.js"'
+2017-10-02 13:11:30.683 +07:00 [Information] Request finished in 8.7758ms 200 text/css; charset=UTF-8
+2017-10-02 13:11:30.690 +07:00 [Information] Request finished in 16.7495ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:11:30.693 +07:00 [Information] Request finished in 20.3569ms 200 application/javascript
+2017-10-02 13:11:30.755 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:11:30.757 +07:00 [Information] Request finished in 1.9405ms 200 application/json; charset=UTF-8
+2017-10-02 13:11:30.814 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:11:30.823 +07:00 [Information] Request finished in 8.8287ms 200 application/json; charset=UTF-8
+2017-10-02 13:11:30.867 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:12:08.916 +07:00 [Information] DLL: Checking if DLLs are valid.
+2017-10-02 13:12:08.923 +07:00 [Information] DLL: All DLLs are valid.
+2017-10-02 13:12:08.939 +07:00 [Information] webpack building...
+2017-10-02 13:12:09.636 +07:00 [Information] 
+2017-10-02 13:12:09.636 +07:00 [Information] [at-loader] Checking started in a separate process...
+2017-10-02 13:12:09.692 +07:00 [Information] webpack built 7e2e3aeb4c752b6f26b2 in 736ms
+2017-10-02 13:12:09.699 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/5b25ce640ca36eb40892.hot-update.json  
+2017-10-02 13:12:09.760 +07:00 [Information] Request finished in 61.5339ms 200 application/json; charset=UTF-8
+2017-10-02 13:12:09.769 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/2.5b25ce640ca36eb40892.hot-update.js  
+2017-10-02 13:12:09.782 +07:00 [Information] Request finished in 13.3193ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:12:09.789 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/2.5b25ce640ca36eb40892.hot-update.js.map  
+2017-10-02 13:12:09.795 +07:00 [Information] Request finished in 5.058ms 200 application/json; charset=UTF-8
+2017-10-02 13:12:09.959 +07:00 [Information] DLL: Checking if DLLs are valid.
+2017-10-02 13:12:09.966 +07:00 [Information] DLL: All DLLs are valid.
+2017-10-02 13:12:09.984 +07:00 [Information] webpack building...
+2017-10-02 13:12:10.152 +07:00 [Information] 
+[at-loader] Ok, 0.519 sec.
+2017-10-02 13:12:10.446 +07:00 [Information] 
+2017-10-02 13:12:10.446 +07:00 [Information] [at-loader] Checking started in a separate process...
+2017-10-02 13:12:10.476 +07:00 [Information] webpack built 62779cb1b2039e9c79a5 in 496ms
+2017-10-02 13:12:10.479 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/7e2e3aeb4c752b6f26b2.hot-update.json  
+2017-10-02 13:12:10.511 +07:00 [Information] Request finished in 31.5791ms 200 application/json; charset=UTF-8
+2017-10-02 13:12:10.944 +07:00 [Information] 
+[at-loader] Ok, 0.502 sec.
+2017-10-02 13:12:17.798 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:12:17.800 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:12:17.801 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:12:17.808 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 9.5257ms
+2017-10-02 13:12:17.809 +07:00 [Information] Request finished in 10.3569ms 200 text/html; charset=utf-8
+2017-10-02 13:12:17.813 +07:00 [Information] Request finished in 46946.3105ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:12:17.823 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:12:17.824 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendVendor.dll.js?v=8yfipaJtkCRMZFs1CIbbunDSw9vNOtUyZm8ee2FeBEE  
+2017-10-02 13:12:17.825 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=uPJPp1xZ2twsn6DzpUDWZnQx5pzxJA77QSzgnXskhDs  
+2017-10-02 13:12:17.843 +07:00 [Information] Request finished in 16.2896ms 200 text/css; charset=UTF-8
+2017-10-02 13:12:17.846 +07:00 [Information] Sending file. Request path: '"/dist/frontendVendor.dll.js"'. Physical path: '"D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\wwwroot\dist\frontendVendor.dll.js"'
+2017-10-02 13:12:17.850 +07:00 [Information] Request finished in 24.0242ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:12:17.853 +07:00 [Information] Request finished in 28.3577ms 200 application/javascript
+2017-10-02 13:12:17.911 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:12:17.914 +07:00 [Information] Request finished in 2.0652ms 200 application/json; charset=UTF-8
+2017-10-02 13:12:17.938 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:12:17.952 +07:00 [Information] Request finished in 13.648ms 200 application/json; charset=UTF-8
+2017-10-02 13:12:18.004 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:12:27.144 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:12:27.147 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:12:27.148 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:12:27.149 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 4.2715ms
+2017-10-02 13:12:27.149 +07:00 [Information] Request finished in 4.6371ms 200 text/html; charset=utf-8
+2017-10-02 13:12:27.154 +07:00 [Information] Request finished in 9149.7621ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:12:27.163 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:12:27.163 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=uPJPp1xZ2twsn6DzpUDWZnQx5pzxJA77QSzgnXskhDs  
+2017-10-02 13:12:27.170 +07:00 [Information] Request finished in 5.5241ms 200 text/css; charset=UTF-8
+2017-10-02 13:12:27.184 +07:00 [Information] Request finished in 18.9239ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:12:27.242 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:12:27.251 +07:00 [Information] Request finished in 8.5747ms 200 application/json; charset=UTF-8
+2017-10-02 13:12:27.363 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:12:27.446 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:12:27.457 +07:00 [Information] Request finished in 10.9234ms 200 application/json; charset=UTF-8
+2017-10-02 13:12:56.659 +07:00 [Information] DLL: Checking if DLLs are valid.
+2017-10-02 13:12:56.666 +07:00 [Information] DLL: All DLLs are valid.
+2017-10-02 13:12:56.691 +07:00 [Information] webpack building...
+2017-10-02 13:12:57.050 +07:00 [Information] 
+2017-10-02 13:12:57.050 +07:00 [Information] [at-loader] Checking started in a separate process...
+2017-10-02 13:12:57.086 +07:00 [Information] webpack built d8553b5a03854ada1f8a in 401ms
+2017-10-02 13:12:57.090 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/62779cb1b2039e9c79a5.hot-update.json  
+2017-10-02 13:12:57.145 +07:00 [Information] Request finished in 54.3216ms 200 application/json; charset=UTF-8
+2017-10-02 13:12:57.507 +07:00 [Information] 
+[at-loader] Ok, 0.47 sec.
+2017-10-02 13:13:01.985 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:13:01.987 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:13:01.989 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:13:01.995 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 10.2752ms
+2017-10-02 13:13:01.996 +07:00 [Information] Request finished in 11.5565ms 200 text/html; charset=utf-8
+2017-10-02 13:13:02.001 +07:00 [Information] Request finished in 34637.2444ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:13:02.018 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=Hw778aLv9JnSaj3UWK5k0eWYnhhgqwplpgce_GQV0l0  
+2017-10-02 13:13:02.018 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendVendor.dll.js?v=8yfipaJtkCRMZFs1CIbbunDSw9vNOtUyZm8ee2FeBEE  
+2017-10-02 13:13:02.021 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:13:02.033 +07:00 [Information] Request finished in 14.6876ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:13:02.041 +07:00 [Information] Sending file. Request path: '"/dist/frontendVendor.dll.js"'. Physical path: '"D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\wwwroot\dist\frontendVendor.dll.js"'
+2017-10-02 13:13:02.044 +07:00 [Information] Request finished in 22.3056ms 200 text/css; charset=UTF-8
+2017-10-02 13:13:02.049 +07:00 [Information] Request finished in 30.4201ms 200 application/javascript
+2017-10-02 13:13:02.118 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:13:02.121 +07:00 [Information] Request finished in 3.4338ms 200 application/json; charset=UTF-8
+2017-10-02 13:13:02.142 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:13:02.156 +07:00 [Information] Request finished in 13.1983ms 200 application/json; charset=UTF-8
+2017-10-02 13:13:02.198 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:13:02.976 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/?companycode=test  
+2017-10-02 13:13:02.979 +07:00 [Information] Executing action method "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" with arguments (null) - ModelState is Valid
+2017-10-02 13:13:02.979 +07:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2017-10-02 13:13:02.980 +07:00 [Information] Executed action "Euroland.NetCore.IRMeetingRequest.Server.Controllers.HomeController.Index (IRMeetingRequest)" in 3.4428ms
+2017-10-02 13:13:02.980 +07:00 [Information] Request finished in 4.2941ms 200 text/html; charset=utf-8
+2017-10-02 13:13:02.984 +07:00 [Information] Request finished in 785.7384ms 200 text/event-stream; charset=utf-8
+2017-10-02 13:13:02.998 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendVendor.dll.js?v=8yfipaJtkCRMZFs1CIbbunDSw9vNOtUyZm8ee2FeBEE  
+2017-10-02 13:13:02.998 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css?v=8GwOMno_36GJe69M6xFzbDnEtuLTzuy_JjfneE46LRk  
+2017-10-02 13:13:02.999 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js?v=Hw778aLv9JnSaj3UWK5k0eWYnhhgqwplpgce_GQV0l0  
+2017-10-02 13:13:03.009 +07:00 [Information] Sending file. Request path: '"/dist/frontendVendor.dll.js"'. Physical path: '"D:\Tools\NetCoreProjects\IRMeetingRequest\trunk\src\WebApplication\wwwroot\dist\frontendVendor.dll.js"'
+2017-10-02 13:13:03.014 +07:00 [Information] Request finished in 14.331ms 200 text/css; charset=UTF-8
+2017-10-02 13:13:03.021 +07:00 [Information] Request finished in 22.0385ms 200 application/javascript
+2017-10-02 13:13:03.022 +07:00 [Information] Request finished in 22.6289ms 200 application/javascript; charset=UTF-8
+2017-10-02 13:13:03.080 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.css.map  
+2017-10-02 13:13:03.082 +07:00 [Information] Request finished in 1.8855ms 200 application/json; charset=UTF-8
+2017-10-02 13:13:03.153 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/frontendMain.js.map  
+2017-10-02 13:13:03.167 +07:00 [Information] Request finished in 13.7784ms 200 application/json; charset=UTF-8
+2017-10-02 13:13:03.211 +07:00 [Information] Request starting HTTP/1.1 GET http://localhost:29224/dist/__webpack_hmr  
+2017-10-02 13:13:08.468 +07:00 [Error] An unhandled exception has occurred while executing the request
+System.IO.IOException: The read operation failed, see inner exception. ---> System.Net.Http.WinHttpException: The connection with the server was terminated abnormally
+   --- End of inner exception stack trace ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Threading.Tasks.RendezvousAwaitable`1.GetResult()
+   at System.Net.Http.WinHttpResponseStream.<CopyToAsyncCore>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<PerformProxyRequest>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-10-02 13:13:08.475 +07:00 [Warning] The response has already started, the error page middleware will not be executed.

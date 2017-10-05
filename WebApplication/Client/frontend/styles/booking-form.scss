@@ -1,0 +1,249 @@
+﻿ul {
+    -webkit-padding-start: 0;
+}
+
+body {
+    background-color: black;
+}
+
+
+.booking-wrapper {
+    height: 100vh;
+    width: 1035px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+.inner-container {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.container {
+    width: 975px;
+    margin: 0 auto;
+}
+
+.arrow {
+    float: left;
+    margin-right: -50px;
+    font-size: 0;
+}
+
+.arrow-typeOfMeeting {
+    float: left;
+    margin-right: -50px;
+    font-size: 0;
+}
+
+.arrow-end {
+    float: left;
+    margin-right: -50px;
+    font-size: 0;
+
+    .end {
+        width: 120px;
+    }
+}
+
+.inner-arrow {
+    padding-right: 29px;
+    height: 58px;
+    display: inline-block;
+    background-color: #EEF1F7;
+    text-align: left;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 58px;
+    vertical-align: middle;    
+    color: black;
+}
+
+.inner-arrow-typeofmeeting {
+    color: black;
+    padding-left: 29px;
+}
+
+
+.arrow:before, .arrow:after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 29px solid transparent;
+    vertical-align: middle;
+}
+
+
+
+.typeOfMeeting:after {
+    border-left-color: red;
+}
+
+.arrow-typeOfMeeting:after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 29px solid transparent;
+    vertical-align: middle;
+    border-left-color: #EEF1F7;
+}
+
+
+.arrow-end:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 29px solid transparent;
+    vertical-align: middle;
+}
+
+
+.activeTypeOfMeeting:after {
+    border-left-color: #4c7baa;
+}
+
+
+
+li.active {
+    .inner-arrow {
+        background-color: #4c7baa;
+        color: white;
+    }
+
+    &:after {
+        border-left-color: #4c7baa;
+    }
+
+    &:before {
+        border-top-color: #4c7baa;
+        border-bottom-color: #4c7baa;
+        border-right-color: #4c7baa;
+    }
+}
+
+
+.arrow-end:before {
+    border-top-color: #EEF1F7;
+    border-bottom-color: #EEF1F7;
+    border-right-color: #EEF1F7;
+}
+
+.arrow:before {
+    border-top-color: #EEF1F7;
+    border-bottom-color: #EEF1F7;
+    border-right-color: #EEF1F7;
+}
+
+.arrow:after {
+    border-left-color: #EEF1F7;
+}
+
+
+
+.footer {
+    margin-top: 20px;
+    clear: both;
+}
+
+.irmeetingrequest-header {
+    background-color: #EEF1F7;
+    height: 58px;
+}
+
+.irmeetingrequest-text {
+    padding-top: 9px;
+}
+
+.time-schedule {
+    height: 63px;
+    background-color: #F7F7F7;
+    margin-top: -16px;
+}
+
+.time-schedule-text {
+    padding-top: 21px;
+}
+
+.btn-next {
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    text-decoration: none;
+    border: 1px solid #4D73A8;
+    background-color: #4D73A8;
+    color: white;
+    width: 120px;
+    height: 28px;
+    text-align: center;
+    display: inline-block;
+    line-height: 28.5px;
+}
+
+.btn-back {
+    margin-right: 24px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.button-wrapper {
+    float: right;
+    margin-top: 110px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1280) {
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 704px;
+    }
+
+    .inner-arrow {
+        width: 88px;
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 643px;
+    }
+
+    .inner-arrow {
+        width: 100px;
+        font-size: 11px;
+        white-space: nowrap;
+        line-height: 55px;
+    }
+
+    .inner-arrow.applicantInfomation {
+        padding-right: 21px !important;
+    }
+
+    .arrow-end {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .inner-arrow.inner-arrow-typeofmeeting.typeOfMeeting {
+        padding-right: 15px !important;
+    }
+}
+
+@media screen and (max-width: 414px) {
+}
+
+@media screen and (max-width: 375px) {
+}
+
+@media screen and (max-width: 320px) {
+}

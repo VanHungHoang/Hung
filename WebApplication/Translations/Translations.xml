@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <node name="Submit" dbid="219" preserve="true">Submit</node>
+  <node name="Ok" dbid="1106" preserve="true">OK</node>
+  <node name="Yes" dbid="2171" preserve="true">YES</node>
+  <node name="No" dbid="2172" preserve="true">NO</node>
+  <node name="Cancel" dbid="41" preserve="true">Cancel</node>
+  <node name="Save" dbid="514" preserve="true">Save</node>
+  
+  <node name="Add" dbid="12" preserve="true">Add</node>
+  <node name="Manage" dbid="2195" preserve="true">Manage</node>
+  <node name="Enable" dbid="2334" preserve="true">Enable</node>
+  <node name="Required" dbid="2371" preserve="true">Required</node>
+  <node name="FieldName" dbid="2372" preserve="true">Field Name</node>
+  <node name="SuppliedBy" dbid="1563" preserve="true">Supplied by © @</node>
+  <node name="CookiePolicy" dbid="2125" preserve="true">Cookie policy</node>
+  <node name="TermOfUse" dbid="2024" preserve="true">For terms of use and data vendors information, see {0}</node>
+  <node name="Disclaimer" dbid="407" preserve="true">Disclaimer</node>
+  <node name="FirstName">First name</node>
+  
+</root>

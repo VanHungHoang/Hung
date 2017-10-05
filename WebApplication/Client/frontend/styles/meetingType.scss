@@ -1,0 +1,229 @@
+﻿@import "layoutResponsive.scss";
+
+$primary-bgr-button-type: white;
+$primary-bgr-button-type-active: #007fff;
+$primary-color-button-type: black;
+$primary-color-button-type-active: white;
+
+$primary-bgr-content-note: #e5e5e5;
+
+$primary-bgr-button-type: white;
+$primary-bgr-button-type-active: #007fff;
+$primary-color-button-type: black;
+$primary-color-button-type-active: white;
+
+$primary-bgr-content-note: #e5e5e5;
+
+
+
+@mixin button-type($bacground, $color) {
+    background: $bacground;
+    color: $color;
+    margin-right: 15px;
+    border: 1px solid transparent;
+    border-color: #9B9B9B;
+}
+
+@mixin custom-button($padding-width, $padding-height, $margin-right) {
+    padding: $padding-width $padding-height !important;
+    margin-right: $margin-right !important;
+}
+
+.type-of-meeting {
+    width: 975px;
+    height: auto;
+    margin: auto;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .content {
+        margin-top: 14px;
+
+        .content-TypeOfMeeting {
+            margin-top: 50px;
+
+            .button-meetingType {
+                margin-top: 24px;
+
+                .title {
+                    font-size: 14px;
+                }
+
+                .tabs {
+                    display: inline-block;
+                    margin: 0;
+                    padding: 0;
+
+                    .meeting-type {
+                        cursor: default;
+                        display: inline-block;
+                        font-size: 14px;
+                    }
+
+                    .face-to-face {
+
+                        @include button-type($primary-bgr-button-type, $primary-color-button-type);
+                        padding: 10px 36px;
+                    }
+
+                    .video-conference {
+
+                        @include button-type($primary-bgr-button-type, $primary-color-button-type);
+                        padding: 10px 22.4px;
+                    }
+
+                    .teleconference {
+
+                        @include button-type($primary-bgr-button-type, $primary-color-button-type);
+                        padding: 10px 30.4px;
+                    }
+
+                    .meetingType-active {
+
+                        @include button-type($primary-bgr-button-type-active, $primary-color-button-type-active);
+                    }
+                }
+            }
+        }
+
+        .content-note {
+            margin-top: 37px;
+            padding: 10px;
+            font-size: 14px;
+            width: 84%;
+            background: $primary-bgr-content-note;
+
+            .text-note {
+                display: none;
+            }
+
+            .cssClassTextNoteActive {
+                display: block;
+            }
+        }
+    }
+}
+
+@include responsive_768 {
+    .content-note {
+        width: 705px !important;
+        line-height: 18px;
+    }
+}
+
+
+@include responsive_425 {
+    .type-of-meeting {
+        width: 100%;
+
+        .content-TypeOfMeeting {
+            margin-top: auto;
+
+            .title {
+                font-size: 13px;
+            }
+
+            .face-to-face {
+
+                @include custom-button(10px, 22px, 2px);
+                font-size: 12px !important;
+            }
+
+            .video-conference {
+
+                @include custom-button(10px, 8.4px, 2px);
+                font-size: 12px !important;
+            }
+
+            .teleconference {
+
+                @include custom-button(10px, 16.4px, 2px);
+                font-size: 13px !important;
+            }
+        }
+
+        .content-note {
+            width: 400px !important;
+            font-size: 12px !important;
+            line-height: 18px;
+        }
+    }
+}
+
+@include responsive_375 {
+
+    .type-of-meeting {
+        width: 100%;
+
+        .content-TypeOfMeeting {
+            margin-top: auto;
+
+            .title {
+                font-size: 12px;
+            }
+
+            .face-to-face {
+
+                @include custom-button(10px, 12px, 2px);
+                font-size: 11px !important;
+            }
+
+            .video-conference {
+
+                @include custom-button(10px, 2.4px, 2px);
+                font-size: 11px !important;
+            }
+
+            .teleconference {
+
+                @include custom-button(10px, 6.4px, 2px);
+                font-size: 11px !important;
+            }
+        }
+
+        .content-note {
+            width: 300px !important;
+            font-size: 12px !important;
+            line-height: 18px;
+        }
+    }
+}
+
+@include responsive_320 {
+
+    .type-of-meeting {
+        width: 100%;
+
+        .content-TypeOfMeeting {
+            margin-top: auto;
+
+            .title {
+                font-size: 12px;
+            }
+
+            .face-to-face {
+
+                @include custom-button(10px, 16px, 2px);
+                font-size: 10px !important;
+            }
+
+            .video-conference {
+
+                @include custom-button(10px, 2.4px, 2px);
+                font-size: 10px !important;
+            }
+
+            .teleconference {
+
+                @include custom-button(10px, 10.4px, 2px);
+                font-size: 10px !important;
+            }
+
+            .content-note {
+                font-size: 11px;
+                width: 280px !important;
+                line-height: 18px;
+            }
+        }
+    }
+}

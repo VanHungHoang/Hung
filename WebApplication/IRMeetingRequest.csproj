@@ -1,0 +1,106 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <DebugType>portable</DebugType>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+    <AssemblyName>IRMeetingRequest</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>ProjectTemplate</PackageId>
+    <RuntimeFrameworkVersion>2.0.0</RuntimeFrameworkVersion>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>latest</TypeScriptToolsVersion>
+    <RootNamespace>Euroland.NetCore.IRMeetingRequest</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Shared\" />
+    <Folder Include="wwwroot\assets\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Remove="Client\frontend\templates\**" />
+    <Compile Remove="Client\frontend\views\**" />
+    <Compile Remove="node_modules\**\*;Client\**\*" />
+    <Compile Remove="Server\Entities\**" />
+    <Compile Remove="Server\Services\Abstract\**" />
+    <Content Remove="Client\frontend\templates\**" />
+    <Content Remove="Client\frontend\views\**" />
+    <Content Remove="Server\Entities\**" />
+    <Content Remove="Server\Services\Abstract\**" />
+    <Content Remove="wwwroot\dist\**\*" />
+    <EmbeddedResource Remove="Client\frontend\templates\**" />
+    <EmbeddedResource Remove="Client\frontend\views\**" />
+    <EmbeddedResource Remove="Server\Entities\**" />
+    <EmbeddedResource Remove="Server\Services\Abstract\**" />
+    <None Remove="Client\frontend\templates\**" />
+    <None Remove="Client\frontend\views\**" />
+    <None Remove="Server\Entities\**" />
+    <None Remove="Server\Services\Abstract\**" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Remove="Client\backend\app\app.component.ts" />
+    <None Remove="Client\backend\app\app.module.ts" />
+    <None Remove="Client\backend\app\app.routes.ts" />
+    <None Remove="Client\backend\app\nav.component.ts" />
+    <None Remove="Client\frontend\app.ts" />
+    <None Remove="Client\frontend\booking\agenda.ts" />
+    <None Remove="Client\frontend\booking\applicant.ts" />
+    <None Remove="Client\frontend\booking\attendees.ts" />
+    <None Remove="Client\frontend\booking\meeting.type.ts" />
+    <None Remove="Client\frontend\calendar\calendar.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="Client\backend\app\app.component.ts" />
+    <TypeScriptCompile Include="Client\backend\app\nav.component.ts" />
+    <TypeScriptCompile Include="Client\backend\app\router.animations.ts" />
+    <TypeScriptCompile Include="Client\backend\app\app.module.ts" />
+    <TypeScriptCompile Include="Client\backend\app\app.routes.ts" />
+    <TypeScriptCompile Include="Client\frontend\app.ts" />
+    <TypeScriptCompile Include="Client\frontend\booking\agenda.ts" />
+    <TypeScriptCompile Include="Client\frontend\booking\applicant.ts" />
+    <TypeScriptCompile Include="Client\frontend\booking\attendees.ts" />
+    <TypeScriptCompile Include="Client\frontend\booking\booking.form.ts" />
+    <TypeScriptCompile Include="Client\frontend\booking\meeting.type.ts" />
+    <TypeScriptCompile Include="Client\frontend\booking\step.base.ts" />
+    <TypeScriptCompile Include="Client\frontend\calendar\calendar.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Euroland.NetCore.ToolsFramework.Mvc" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.AngularServices" Version="1.1.0-beta-000002" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="Webpack" Version="4.0.0" />
+    <PackageReference Include="Serilog" Version="2.4.1-dev-00801" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="1.4.1-dev-10147" />
+    <PackageReference Include="Serilog.Sinks.Seq" Version="3.3.1" />
+    <PackageReference Include="Bogus" Version="15.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.0">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+  
+  <Target Name="RunWebpack" BeforeTargets="BeforePublish">
+    <Exec Command="npm run clean:dist" />
+    <Exec Command="npm run build:prod" />
+    <ItemGroup>
+      <DistFiles Include="wwwroot\dist\**\*" />
+      <Content Include="@(DistFiles)" CopytoPublishDirectory="Always" />
+        <Content Include="app.yaml" CopyToOutputDirectory="Always" />
+      <ContentWithTargetPath Include="@(DistFiles)" TargetPath="%(Identity)" CopyToPublishDirectory="Always" />
+    </ItemGroup>
+  </Target>
+</Project>
